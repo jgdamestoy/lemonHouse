@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { defineMessages, injectIntl } from "react-intl";
 
-import { config as CONFIG } from "config/config";
+import { config as CONFIG } from "config/";
 
 const messages = defineMessages({
   title: {
@@ -21,11 +21,11 @@ const messages = defineMessages({
   }
 });
 
-const Title = styled.div`
-  color: red;
-  margin-bottom: 5vw;
+const Container = styled.div`
 `;
-const Description = styled.div`margin-bottom: 5vw;`;
+const Title = styled.div`
+`;
+const Description = styled.div``;
 
 /*
 *   Check if it must append /country to the url
@@ -33,8 +33,8 @@ const Description = styled.div`margin-bottom: 5vw;`;
 *   or display 404
 */
 const propTypes = {
-  country: PropTypes.string,
 };
+const defaultProps = {};
 
 const redirectCountry = (pathname, country, knownCountries) => {
   /*
@@ -53,15 +53,15 @@ const redirectCountry = (pathname, country, knownCountries) => {
   return;
 };
 
-const NoMatch = ({ intl, country, history, location }) => {
-  console.debug("NOMATCH WRONG URL");
+const NoMatch = ({ intl, history, location }) => {
+  console.debug("NOMATCH WRONG URL", location.pathname);
 
   /* Check if user need to be redirect */
   if (location) {
     const redirect = redirectCountry(
       location.pathname,
-      country,
-      CONFIG.KNOWN_COUNTRIES
+      CONFIG.LOCALE,
+      CONFIG.KNOW_COUNTRIES
     );
 
     if (redirect) {

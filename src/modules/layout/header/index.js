@@ -61,7 +61,7 @@ class ClassicHeader extends Component {
   render() {
     return (
       <Container>
-        <Wrapper opaque={this.state.scrolled} isMenuOpen={isMenuOpen}>
+        <Wrapper opaque={this.state.scrolled}>
           <WrapperLogo>
           </WrapperLogo>
           HEADER

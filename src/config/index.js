@@ -1,8 +1,3 @@
-import Intl from "intl";
-import "intl/locale-data/jsonp/en";
-import "intl/locale-data/jsonp/fr";
-import "intl/locale-data/jsonp/de";
-
 const titles = {
   fr: "titre default",
   en: "default title",
@@ -15,13 +10,15 @@ const descriptions = {
     "default description",
 };
 
-const LOCALE = window.navigator.userLanguages || window.navigator.languages;
-const LOCALE_OVERRIDE = null,
+//const LOCALE = window.navigator.userLanguages || window.navigator.languages;
+const LOCALE = "fr";
 
-export const commonConfig = {
+const LOCALE_OVERRIDE = "fr";
+
+export const config = {
   LOCALE_OVERRIDE: LOCALE_OVERRIDE,
-  LOCALE: LOCALE;
-  KNOW_COUNTRIES: ["fr", "en"];
+  LOCALE: LOCALE,
+  KNOW_COUNTRIES: ["fr", "en"],
   VERSION: "0.1.0",
   APP_TYPE: "browser",
 

@@ -10,21 +10,18 @@ import { IntlProvider } from "react-intl";
 import { addLocaleData } from "react-intl";
 import en from "react-intl/locale-data/en";
 import fr from "react-intl/locale-data/fr";
-import { config as CONFIG } from "config/config";
+import { config as CONFIG } from "config/";
 import translations from "translations/";
 
 addLocaleData([...fr, ...en]);
 
-const propTypes = {
-  country: PropTypes.string
-};
-const defaultProps = {
-  country: CONFIG.LOCALE_OVERRIDE || CONFIG.LOCALE
-};
+const propTypes = {};
+const defaultProps = {};
 
 class IntlConnect extends Component {
   render() {
-    const { children, country } = this.props;
+    const { children } = this.props;
+    const country = CONFIG.LOCALE_OVERRIDE || CONFIG.LOCALE;
 
     return (
       <IntlProvider locale={country} messages={translations[country]}>
@@ -37,4 +34,4 @@ class IntlConnect extends Component {
 IntlConnect.propTypes = propTypes;
 IntlConnect.defaultProps = defaultProps;
 
-export default connect(IntlConnect);
+export default IntlConnect;

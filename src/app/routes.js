@@ -9,7 +9,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import { config as CONFIG } from "config/config";
+import { config as CONFIG } from "config";
 
 import Home from "modules/home/";
 import NoMatch from "./noMatch";
@@ -24,7 +24,7 @@ class Routes extends Component {
 
     return (
       <Switch>
-        <Route path={`/${country}/home`} component={Home} />
+        <Route exact path={`/${country}`} component={Home} />
 
         <Route render={props => <NoMatch country={country} {...props} />} />
       </Switch>

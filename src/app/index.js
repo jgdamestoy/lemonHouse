@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import { Router } from "react-router-dom";
 import ReactGA from "react-ga";
-import "classlist-polyfill"; // Polyfill for DOMElement.classList to work on IE
 import styled from "styled-components";
 
-import meta from "common/helpers/metaHelpers";
+import meta from "common/metaHelper";
 import history from "config/history";
 
-import IntlConnect from "./components/IntlConnect";
+import IntlConnect from "./intlConnect";
 import Layout from "modules/layout/";
-import Routes from "./components/Routes";
+import Routes from "./routes";
 
-const GlobalStyleWrapper = styled.div``;
+const GlobalStyleWrapper = styled.div`
+  margin: 0;
+  padding: 0;
+`;
 
 class App extends Component {
   componentWillMount() {
@@ -43,4 +45,4 @@ class App extends Component {
   }
 }
 
-export default connect(App);
+export default App;
