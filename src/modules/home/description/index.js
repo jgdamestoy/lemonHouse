@@ -1,11 +1,43 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import {colors} from "config/theme"
+
+import {data} from "./data";
+import TextBlock from "./TextBlock";
+import ImgBlock from "./ImgBlock";
 
 const Container = styled.div`
     width: 100vw;
     padding: 10vw;
-`;
+    display: flex;
+    flex-direction: column;
+`
+const Block = styled.div`
+    width: 80vw;
+    height: 20vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    display: flex;
+    border-bottom: 2px solid ${colors.lemonGreen};
+`
+const Title = styled.div`
+    width: 80vw 
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: ${colors.lemonGreen};
+    padding-bottom: 15px;
+`
+const Footer = styled.div`
+    width: 80vw;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5vh;
+`
+const Text = styled.div`
+`
 
 const propTypes = {};
 const defaultProps = {};
@@ -17,28 +49,35 @@ class Description extends Component {
   }
 
   render() {
+
     return (
       <Container>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Quisque porta pulvinar lacus ac porta. Aenean vehicula mi 
-        varius tortor congue, eu sagittis urna scelerisque. Vivamus 
-        gravida, libero quis fermentum feugiat, turpis leo dapibus augue, 
-        et condimentum ipsum massa eu neque. Aliquam vitae nibh et nunc 
-        mollis pretium. Phasellus nulla diam, suscipit non posuere sed, 
-        pharetra eu eros. Nulla viverra commodo condimentum. Proin 
-        pellentesque consectetur luctus. Suspendisse varius dolor ligula. 
-        Suspendisse porta a turpis et laoreet. In vel elit molestie, 
-        consectetur nulla id, tincidunt tellus. Fusce nec lacinia nibh. 
-        Aliquam pellentesque arcu mauris, a euismod nulla mattis consectetur. 
-        Nulla euismod nunc est.
-        Sed consectetur tempor molestie. Duis lobortis efficitur nisi. 
-        Proin sapien quam, pharetra sed ipsum et, condimentum facilisis sem. 
-        Nam vitae mattis elit. Nullam vitae consectetur lorem. 
-        Pellentesque ornare ante et purus scelerisque rhoncus. 
-        Vestibulum non varius erat, non ultricies dolor. Praesent 
-        at volutpat justo, at pulvinar nunc. Sed facilisis massa massa, 
-        eu rhoncus diam finibus non. Cras ac velit nibh. 
-        Vestibulum vulputate arcu in porttitor vestibulum. Donec eget arcu dui.
+        <Title>NOUVEAUX PROPRIETAIRES ET NOUVELLE EQUIPE DEPUIS MI-MARS 2018</Title>
+        {data.map((item) => {
+            return(
+                item.pos === "right" ?
+                (
+                    <Block>
+                        <TextBlock text={item.text} />
+                        <ImgBlock img={item.img} />
+                    </Block>
+                )
+                :
+                (
+                    <Block>
+                        <ImgBlock img={item.img} />
+                        <TextBlock text={item.text} />
+                    </Block>
+                )
+
+            )
+        })}
+        <Footer>
+            <Text>
+                Nous parlons français et anglais et serons heureux de vous rencontrer.<br />
+                Stéphanie et Jean.
+            </Text>
+        </Footer>
       </Container>
     )
   }

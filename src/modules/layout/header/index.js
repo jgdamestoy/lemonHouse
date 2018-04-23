@@ -21,13 +21,15 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: ${props =>
-     props.opaque ? `2px solid ${colors.lemonYellow}` : "none"};
+     props.scrolled ? `2px solid ${colors.lemonYellow}` : "none"};
   transition: background-color 1s ease;
   background-color: ${props =>
-    props.opaque ? "rgba(240, 240, 240, 0.5)" : "transparent"};
+    props.scrolled ? "rgba(240, 240, 240, 0.5)" : "transparent"};
 `;
 const Logo = styled.img`
-  width: 250px;
+  transition: 0s;
+  width: ${props =>
+    props.scrolled ? "320px" : "50px"};
 `;
 const LeftContent = styled.div`
   margin-left: 15px;
@@ -80,9 +82,9 @@ class ClassicHeader extends Component {
   render() {
     return (
       <Container>
-        <Wrapper opaque={this.state.scrolled}>
+        <Wrapper scrolled={this.state.scrolled}>
           <LeftContent >
-            <Logo src="/img/logoH.png" />
+            <Logo src={this.state.scrolled ? "/img/logoH.png" : "/img/logo.png"} scrolled={this.state.scrolled} />
           </LeftContent>
           
           <RightContent>
