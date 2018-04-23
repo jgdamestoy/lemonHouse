@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: Arial;
   font-size: 11px;
-  background-color: #232336;
+  background-color: white;
   color: #fff;
+  overflow-x: hidden;
 }

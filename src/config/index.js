@@ -1,13 +1,13 @@
 const titles = {
-  fr: "titre default",
-  en: "default title",
+  fr: "Lemon House Samui",
+  en: "Lemon House Samui",
 };
 
 const descriptions = {
   fr:
-    "description default",
+    "a tiny hotel in samui",
   en:
-    "default description",
+    "a tiny hotel in samui",
 };
 
 //const LOCALE = window.navigator.userLanguages || window.navigator.languages;

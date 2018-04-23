@@ -2,13 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+import Cover from "./cover";
+import Description from "./description"
+
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(243, 227, 49, 0.5)
 `;
 
 const propTypes = {};
@@ -21,7 +19,11 @@ class Home extends Component {
   }
 
   render() {
-    return <Container>Home</Container>;
+    return (
+      <Container>
+        <Cover />
+        <Description />
+      </Container>);
   }
 }
 

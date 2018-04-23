@@ -9,7 +9,7 @@ import Footer from "./footer/";
 const Container = styled.div`
 `;
 /* Hanlde min-height on all the App */
-const Content = styled.div`min-height: calc(100vh - 120px);`;
+const Content = styled.div`min-height: calc(100vh);`;
 
 const propTypes = {};
 
