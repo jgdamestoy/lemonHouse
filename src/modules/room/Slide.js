@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const Container = styled.div``;
-const Img = styled.img`
-  width: 100%;
+const Container = styled.div`
+  height: 100vh;
+  background: url(${props => props.backgroundImg}) no-repeat center center;
+  background-size: cover;
 `;
 
 const propTypes = {
@@ -20,8 +21,7 @@ class Slide extends Component {
 
   render() {
     return (
-      <Container>
-        <Img src={this.props.img}/>
+      <Container backgroundImg={this.props.img}>
       </Container>
     );
   }

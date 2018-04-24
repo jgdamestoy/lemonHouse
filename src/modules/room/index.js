@@ -8,10 +8,19 @@ import Carousel from "./Carousel";
 import RoomDescription from "./RoomDescription"
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+const Content = styled.div`
+  position: absolute;
+  padding: 5vw;
+  bottom: 10vh;
+  left: 10vw;
+  background-color: rgba(230,230,230,0.5);
+  border-radius: 25px;
 `;
 const BookingButton = styled.a`
   margin-top: 10vh;
@@ -50,19 +59,21 @@ class Room extends Component {
       <Container>
         <Carousel imgs={room.imgs} />
         
-        <BookingButton 
-          target="_blank"
-          href="https://www.booking.com/index.fr.html"
-        >
-          Book Now
-        </BookingButton>
+        <Content>
+          <RoomDescription 
+            type={type}
+            description={description}
+            number={number}
+            id={id}
+          />
 
-        <RoomDescription 
-          type={type}
-          description={description}
-          number={number}
-          id={id}
-        />
+          <BookingButton 
+            target="_blank"
+            href="https://www.booking.com/index.fr.html"
+          >
+            Book Now
+          </BookingButton>
+        </Content>
       </Container>
     );
   }

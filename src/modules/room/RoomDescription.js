@@ -5,8 +5,6 @@ import {colors, fontSize} from "config/theme";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  padding: 10vw;
-  width: 80vw;
   display: flex;
   flex-direction: column;
 `;
@@ -21,28 +19,6 @@ const Description = styled.div`
   color: ${colors.lemonWhite};
   font-size: ${fontSize.description};
   padding-bottom: 5vh;
-`;
-const NumberBox = styled.div`
-  color: ${colors.lemonGreen};
-  font-size: ${fontSize.description};
-  padding-bottom: 10vh;
-`;
-const Button = styled.div`
-  margin-right: 10px;
-  padding: 5px 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  border-radius: 5px;
-  background-color: rgba(243, 227, 49, 0.8);
-  border: 2px solid transparent;
-  &:hover {
-    color: ${colors.lemonGreen};
-    border: 2px solid ${colors.lemonGreen};
-  };
-`;
-const StyledLink = styled(Link)`
-  text-decoration: none ;
 `;
 
 const propTypes = {
@@ -67,12 +43,6 @@ class RoomDescription extends Component {
         <Type>{type}</Type>
         
         <Description>{description}</Description>
-        
-        <NumberBox>{number}</NumberBox> 
-        
-        <StyledLink to={`/room/${id}`}>
-          <Button>See the room</Button>
-        </StyledLink>
       </Container>
     );
   }
