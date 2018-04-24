@@ -9,7 +9,7 @@ import ImgBlock from "./ImgBlock";
 
 const Container = styled.div`
     width: 100vw;
-    padding: 10vw;
+    padding: 5vw 10vw;
     display: flex;
     flex-direction: column;
 `
@@ -40,7 +40,10 @@ const Footer = styled.div`
     align-items: center;
 `
 const Text = styled.div`
-    padding-bottom: 15px;
+    background-color: rgba(243, 227, 49, 0.3);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 2vh;
 `
 const ImgFooter = styled.img`
     width: 80vh;

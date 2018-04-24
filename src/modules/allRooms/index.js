@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import Room from "./Room";
 
 const Container = styled.div`
-  padding: 10vw;
+  padding: 5vw 10vw;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,12 @@ const Title = styled.div`
   font-weight: bold;
   text-transform: uppercase;
   color: ${colors.lemonGreen};
-  padding-bottom: 5vh;
+  padding: 3vh 15vh;
+  background-color: rgba(243, 227, 49, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 const BookingButton = styled.a`
   margin-top: 10vh;
