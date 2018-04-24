@@ -27,4 +27,5 @@ export const config = {
   META_TITLE: titles[LOCALE_OVERRIDE || LOCALE],
   META_DESCRIPTION: descriptions[LOCALE_OVERRIDE || LOCALE],
   META_IMAGE: null,
+  GOOGLE_MAP_API_KEY: "AIzaSyAA5v8QPDKFRBkMtZzs_YjQUYksvTenfjM"
 };

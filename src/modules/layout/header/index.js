@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { colors } from "config/theme";
+import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -50,7 +51,10 @@ const Button = styled.div`
   &:hover {
     color: ${colors.lemonGreen};
     border: 2px solid ${colors.lemonGreen};
-  }
+  };
+`;
+const StyledLink = styled(Link)`
+  text-decoration: none ;
 `;
 
 const propTypes = {
@@ -84,13 +88,15 @@ class ClassicHeader extends Component {
       <Container>
         <Wrapper scrolled={this.state.scrolled}>
           <LeftContent >
-            <Logo src={this.state.scrolled ? "/img/logoH.png" : "/img/logo.png"} scrolled={this.state.scrolled} />
+            <Link to="/">
+              <Logo src={this.state.scrolled ? "/img/logoH.png" : "/img/logo.png"} scrolled={this.state.scrolled} />
+            </Link>
           </LeftContent>
           
           <RightContent>
-            <Button>About</Button>
-            <Button>Rooms</Button>
-            <Button>What's around</Button>
+            <StyledLink to="/about"><Button>About</Button></StyledLink>
+            <StyledLink to="/allrooms"><Button>Rooms</Button></StyledLink>
+            <StyledLink to="/around"><Button>What's around</Button></StyledLink>
           </RightContent>
         </Wrapper>
       </Container>

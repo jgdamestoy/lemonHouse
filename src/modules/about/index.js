@@ -33,11 +33,35 @@ const Footer = styled.div`
     width: 80vw;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
     padding-top: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const Text = styled.div`
+    padding-bottom: 15px;
 `
+const ImgFooter = styled.img`
+    width: 80vh;
+`
+const BookingButton = styled.a`
+  margin-top: 10vh;
+  width: 60vw;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: ${colors.lemonGreen};
+  border: 2px solid transparent;
+  &:hover {
+    color: ${colors.lemonYellow};
+    border: 2px solid ${colors.lemonYellow};
+  };
+`;
 
 const propTypes = {};
 const defaultProps = {};
@@ -53,18 +77,18 @@ class Description extends Component {
     return (
       <Container>
         <Title>NOUVEAUX PROPRIETAIRES ET NOUVELLE EQUIPE DEPUIS MI-MARS 2018</Title>
-        {data.map((item) => {
+        {data.map((item, index) => {
             return(
                 item.pos === "right" ?
                 (
-                    <Block>
+                    <Block key={index}>
                         <TextBlock text={item.text} />
                         <ImgBlock img={item.img} />
                     </Block>
                 )
                 :
                 (
-                    <Block>
+                    <Block key={index}>
                         <ImgBlock img={item.img} />
                         <TextBlock text={item.text} />
                     </Block>
@@ -77,6 +101,13 @@ class Description extends Component {
                 Nous parlons français et anglais et serons heureux de vous rencontrer.<br />
                 Stéphanie et Jean.
             </Text>
+            <ImgFooter src="/img/IMG_5970.JPG"/>
+            <BookingButton 
+              target="_blank"
+              href="https://www.booking.com/index.fr.html"
+            >
+              Book Now
+            </BookingButton>
         </Footer>
       </Container>
     )

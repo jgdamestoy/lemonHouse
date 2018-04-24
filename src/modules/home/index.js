@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import Cover from "./cover";
-import Description from "./description"
+import Cover from "./cover/";
+import Contact from "./contact/";
 
 const Container = styled.div`
-  background: rgba(243, 227, 49, 0.5)
 `;
 
 const propTypes = {};
@@ -22,7 +21,10 @@ class Home extends Component {
     return (
       <Container>
         <Cover />
-        <Description />
+        
+       
+        
+        <Contact />
       </Container>);
   }
 }

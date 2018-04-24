@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { defineMessages, injectIntl } from "react-intl";
 
 import { config as CONFIG } from "config/";
+import { colors, fontSize } from "config/theme";
 
 const messages = defineMessages({
   title: {
@@ -22,10 +23,23 @@ const messages = defineMessages({
 });
 
 const Container = styled.div`
+  display: flex;
+  height: 100vh;
+  padding: 0vw 10vw;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 const Title = styled.div`
+  color: ${colors.lemonGreen}
+  font-size: ${fontSize.title}
+  padding-bottom: 10vh;
 `;
-const Description = styled.div``;
+const Description = styled.div`
+  color: ${colors.lemonGreen}
+  font-size: ${fontSize.subtitle}
+`;
 
 /*
 *   Check if it must append /country to the url

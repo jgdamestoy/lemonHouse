@@ -12,6 +12,9 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import { config as CONFIG } from "config";
 
 import Home from "modules/home/";
+import About from "modules/about/";
+import AllRooms from "modules/allRooms/";
+import Room from "modules/room/";
 import NoMatch from "./noMatch";
 
 
@@ -25,8 +28,12 @@ class Routes extends Component {
     return (
       <Switch>
         <Route exact path={`/${country}`} component={Home} />
+        <Route path={`/${country}/about`} component={About} />
+        <Route path={`/${country}/allrooms`} component={AllRooms} />
+        <Route path={`/${country}/room/:id`} component={Room} />
 
         <Route render={props => <NoMatch country={country} {...props} />} />
+
       </Switch>
     );
   }

@@ -24,7 +24,6 @@ class ImgBlock extends Component {
   }
 
   render() {
-    console.log(this.props.img)
     return (
       <Container>
         <Img src={this.props.img}/>
