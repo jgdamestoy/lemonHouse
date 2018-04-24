@@ -13,7 +13,7 @@ import Routes from "./routes";
 const GlobalStyleWrapper = styled.div`
   margin: 0;
   padding: 0;
-  background-color: rgba(243, 227, 49, 0.5);
+  background-color: rgba(243, 227, 49, 0.2);
 `;
 
 class App extends Component {

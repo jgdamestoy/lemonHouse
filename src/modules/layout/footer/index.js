@@ -6,7 +6,8 @@ import {colors} from "config/theme";
 const Container = styled.div`
   height: 60px;
   display: flex;
-  border-top: 2px solid ${colors.lemonGreen}
+  border-top: 2px solid ${colors.lemonGreen};
+  background-color: rgba(243, 227, 49, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
