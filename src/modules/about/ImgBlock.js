@@ -5,10 +5,13 @@ import Waypoint from "react-waypoint";
 
 import { breakPoints } from "config/theme";
 
+/*
+transform: ${props =>
+props.animated ? "translateX(0%)" : "translateX(300%)"};
+transition: transform 1s ease;
+*/
+
 const Container = styled.div`
-  transform: ${props =>
-    props.animated ? "translateX(0%)" : "translateX(300%)"};
-  transition: transform 1s ease;
   width: 80vw;
   display: flex;
   justify-content: center;

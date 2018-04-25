@@ -7,8 +7,8 @@ if (userLanguages) {
   userLanguages = userLanguages.toLowerCase();
 }
 
-const LOCALE = userLanguages || "en";
-const LOCALE_OVERRIDE = null;
+const LOCALE = "en"; //userLanguages || "en";
+const LOCALE_OVERRIDE = "en";
 
 export const config = {
   LOCALE_OVERRIDE: LOCALE_OVERRIDE,
