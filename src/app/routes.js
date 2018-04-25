@@ -17,9 +17,7 @@ import AllRooms from "modules/allRooms/";
 import Room from "modules/room/";
 import NoMatch from "./noMatch";
 
-
-const propTypes = {
-};
+const propTypes = {};
 
 class Routes extends Component {
   render() {
@@ -33,7 +31,6 @@ class Routes extends Component {
         <Route path={`/${country}/room/:id`} component={Room} />
 
         <Route render={props => <NoMatch country={country} {...props} />} />
-
       </Switch>
     );
   }

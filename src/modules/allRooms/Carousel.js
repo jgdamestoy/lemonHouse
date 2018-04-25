@@ -22,7 +22,7 @@ const propTypes = {
 };
 const defaultProps = {};
 
-class Template extends Component {
+class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -41,8 +41,8 @@ class Template extends Component {
       <Container>
         <Slider {...settings}>
           {this.props.imgs.map((img, index) => (
-            <Link to={`/room/${id}`}>
-              <Slide key={index} img={img} />
+            <Link key={index} to={`/room/${id}`}>
+              <Slide img={img} />
             </Link>
           ))}
         </Slider>
@@ -51,7 +51,7 @@ class Template extends Component {
   }
 }
 
-Template.propTypes = propTypes;
-Template.defaultProps = defaultProps;
+Carousel.propTypes = propTypes;
+Carousel.defaultProps = defaultProps;
 
-export default Template;
+export default Carousel;

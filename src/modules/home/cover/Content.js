@@ -15,6 +15,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 1s ease;
 `;
 const Title = styled.div`
   padding-bottom: 3vh;
@@ -48,7 +49,7 @@ class Content extends Component {
     });
 
     return (
-      <Container>
+      <Container className="animated fadeInLeft">
         <Title>Lemon house samui</Title>
         <Description>A tiny hotel in Thaïland</Description>
         <ButtonBox>

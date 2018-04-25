@@ -11,7 +11,7 @@ import { addLocaleData } from "react-intl";
 import en from "react-intl/locale-data/en";
 import fr from "react-intl/locale-data/fr";
 import { config as CONFIG } from "config/";
-import translations from "translations/";
+import translations from "config/translations/";
 
 addLocaleData([...fr, ...en]);
 

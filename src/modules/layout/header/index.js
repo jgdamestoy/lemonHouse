@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { injectIntl, defineMessages } from "react-intl";
 
+import { config as CONFIG } from "config/";
 import { colors, breakPoints } from "config/theme";
 import StdButton from "components/StdButton";
 
@@ -85,7 +86,7 @@ class ClassicHeader extends Component {
     return (
       <Wrapper scrolled={this.state.scrolled}>
         <LeftContent>
-          <Link to="/">
+          <Link to={`/${CONFIG.LOCALE}/`}>
             <Logo
               backgroundImgLong="/img/logoH.png"
               backgroundImg="/img/logoH.png"

@@ -1,0 +1,39 @@
+{
+  "noMatch.title": "Unavailable page",
+  "noMatch.description":
+    "The address may contain typing errors. Our website may be experiencing difficulties",
+  "header.about": "About",
+  "header.rooms": "Rooms",
+  "header.around": "What's around",
+  "homeCover.rooms": "See the rooms",
+  "room.book": "Book now",
+  "allRooms.title": "Our rooms",
+  "allRooms.book": "Book now",
+  "allRooms.seeRoomButton": "See the room",
+  "about.title": "New owners and new team since half-march 2018",
+  "about.block1":
+    "We are a couple of new French managers and our hotel is located close to Maenam Beach and Walking Street, where you'll find lots of bars and restaurants and a colorful market every Thursday night.",
+  "about.block2":
+    "We welcome you in a green and quiet with a functioning \"Guest House\", where the atmosphere will be friendly and family. Good mood, smiles and laughter will be the watchwords. We will do everything to make your stay enjoyable and that you keep the best memories. You will be able to pass here in a few minutes from the tumult of the Main Road to the silence of a small tropical garden.",
+  "about.block3":
+    "The reception is open from 8 a.m to 6.30 p.m, check-in from 2 p.m and check-out until 11 a.m. Tell us your approximate time of arrival so that we can do everything to accommodate you as best as possible.",
+  "about.block4":
+    "Six of our rooms have private balconies and all are equipped with air conditioning, cable TV and mini bar. Some also have kitchenettes with dining tables and / or outdoor spa baths. Wi-Fi is available throughout the property.",
+  "about.block5":
+    "We will serve you hearty breakfasts in the lounge or even at the bar if you wish, from 8.30 a.m to 10 p.m. For a more early hour, ask us 24 hours in advance and we will try to organize it for you. If you have not opted for breakfast, you can still enjoy it by ordering the day before, before 5 p.m , priced at 250 THB per person.",
+  "about.block6":
+    "Our animal friends are welcome for free. Jasmine, our lovely English Setter dog, will be happy to keep them company if you wish.",
+  "about.block7":
+    "Finally, we can arrange for you the rental of cars and scooters, as well as your transfers.",
+  "aboutFooter.title":
+    "We speak French and English and will be happy to meet you.<br /> Stephanie and Jean.",
+  "aboutFooter.book": "Book now",
+  "about.room1Type": "Room's type",
+  "about.room1Desc": "Romm's description",
+  "about.room2Type": "Room's type",
+  "about.room2Desc": "Romm's description",
+  "about.room3Type": "Room's type",
+  "about.room3Desc": "Romm's description",
+  "about.room4Type": "Room's type",
+  "about.room4Desc": "Romm's description"
+}

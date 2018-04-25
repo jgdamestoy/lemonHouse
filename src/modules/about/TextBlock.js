@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { injectIntl } from "react-intl";
+import Waypoint from "react-waypoint";
 
 import { colors, breakPoints, fontSize } from "config/theme";
 
@@ -13,7 +14,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${colors.backgroundTextBlock};
+  background-color: ${props =>
+    props.animated ? colors.backgroundTextBlock : "transparent"};
+  transition: background-color 1s ease;
   border-radius: 20px;
   padding: 5vw;
   @media (min-width: ${breakPoints.std}) {
@@ -24,13 +27,28 @@ const Container = styled.div`
 `;
 
 const propTypes = {
-  text: PropTypes.string
+  text: PropTypes.object
 };
 
 class TextBlock extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animated: false
+    };
+  }
+  handleAnimate = () => this.setState({ animated: true });
+
   render() {
     const { intl } = this.props;
-    return <Container>{intl.formatMessage(this.props.text)}</Container>;
+    return (
+      <div>
+        <Container animated={this.state.animated}>
+          {intl.formatMessage(this.props.text)}
+        </Container>
+        <Waypoint scrollableAncestor={window} onEnter={this.handleAnimate} />
+      </div>
+    );
   }
 }
 

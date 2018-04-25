@@ -1,11 +1,19 @@
-//const LOCALE = window.navigator.userLanguages || window.navigator.languages;
-const LOCALE = "fr";
-const LOCALE_OVERRIDE = "fr";
+let userLanguages =
+  window.navigator.userLanguages || window.navigator.languages;
+if (userLanguages && userLanguages[0]) {
+  userLanguages = userLanguages[0].substring(0, 2);
+}
+if (userLanguages) {
+  userLanguages = userLanguages.toLowerCase();
+}
+
+const LOCALE = userLanguages || "en";
+const LOCALE_OVERRIDE = null;
 
 export const config = {
   LOCALE_OVERRIDE: LOCALE_OVERRIDE,
   LOCALE: LOCALE,
-  KNOW_COUNTRIES: ["fr", "en"],
+  KNOW_COUNTRIES: ["fr", "en", "de", "es"],
   VERSION: "0.1.0",
   APP_TYPE: "browser",
   META_TITLE: "Lemon House Samui",

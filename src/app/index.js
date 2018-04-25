@@ -3,7 +3,7 @@ import { Router } from "react-router-dom";
 import ReactGA from "react-ga";
 import styled from "styled-components";
 
-import meta from "common/metaHelper";
+import meta from "helpers/metaHelper";
 import history from "config/history";
 
 import IntlConnect from "./intlConnect";

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import { config as CONFIG } from "config/";
 import { colors, fontSize, breakPoints } from "config/theme";
 
 const StyledButton = styled.div`
@@ -35,7 +36,7 @@ class RoomButton extends Component {
     const { label, to } = this.props;
 
     return (
-      <StyledLink to={to}>
+      <StyledLink to={`/${CONFIG.LOCALE.concat(to)}`}>
         <StyledButton>{label}</StyledButton>
       </StyledLink>
     );

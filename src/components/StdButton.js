@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import { config as CONFIG } from "config/";
 import { colors } from "config/theme";
 
 const Button = styled.div`
@@ -38,7 +39,7 @@ class StdButton extends Component {
   render() {
     const { label, to } = this.props;
     return (
-      <StyledLink to={to}>
+      <StyledLink to={`/${CONFIG.LOCALE.concat(to)}`}>
         <Button>{label}</Button>
       </StyledLink>
     );

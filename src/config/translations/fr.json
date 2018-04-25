@@ -1,0 +1,40 @@
+{
+  "noMatch.title": "Page indisponible",
+  "noMatch.description":
+    "The address may contain typing errors. Our website may be experiencing difficulties",
+  "header.about": "A Propos",
+  "header.rooms": "Nos Chambres",
+  "header.around": "Autour",
+  "homeCover.rooms": "Voir les chambres",
+  "room.book": "Reserver",
+  "allRooms.title": "Nos chambres",
+  "allRooms.book": "Reserver",
+  "allRooms.seeRoomButton": "Voir les chambres",
+  "about.title":
+    "Nouveaux proprietaires et nouvelle equipe depuis mi-mars 2018",
+  "about.block1":
+    "Nous sommes un couple de nouveaux managers français. Notre établissement est situé à proximité de Maenam Beach et de la Walking Street, où vous trouverez de nombreux bars et restaurants et où un marché coloré vous accueillera tous les jeudis soirs.",
+  "about.block2":
+    "Nous vous accueillons dans un cadre verdoyant et calme avec un fonctionnement de \"Guest House\", où l'ambiance sera conviviale et familiale. Bonne humeur, sourires et rires seront les mots d'ordre. Nous ferons tout pour rendre votre séjour agréable et que vous en gardiez les meilleurs souvenirs. Vous pourrez passer ici en quelques minutes du tumulte de la \"Main Road\" au silence d'un petit jardin tropical.",
+  "about.block3":
+    "La réception est ouverte de 08h00 à 18h30, l'enregistrement à partir de 14h00 et le départ jusqu`à 11h00.  Dites-nous votre heure approximative d'arrivée afin que nous puissions faire tout pour vous accueillir le mieux possible.",
+  "about.block4":
+    "Six de nos chambres ont des balcons privés et toutes sont équipées de climatisation, télévision par câble et mini-bar. Certaines possèdent également une kitchenette avec des tables à manger et / ou des baignoires spa extérieures. Une connexion Wi-Fi est disponible dans tout l'établissement.",
+  "about.block5":
+    "Nous vous servirons des petits déjeuners copieux dans le salon ou même au bar si vous le souhaitez, de 08h30 à 10h00. Pour un horaire plus matinal, demandez-nous 24 heures à l'avance et nous essaierons de l'organiser pour vous. Si vous n'avez pas opté pour le petit déjeuner, vous pourrez toujours en profiter en le commandant la veille avant 17h00, au prix de 250 THB par personne.",
+  "about.block6":
+    "Nos amis les animaux sont les bienvenus gratuitement. Jasmine, notre adorable chienne Setter anglais, se fera un plaisir de leur tenir compagnie si vous le souhaitez.",
+  "about.block7":
+    "Enfin, nous pouvons organiser pour vous la location de voitures et scooters, ainsi que vos transferts.",
+  "aboutFooter.title":
+    "Nous parlons français et anglais et serons heureux de vous rencontrer.<br /> Stephanie et Jean.",
+  "aboutFooter.book": "Reserver",
+  "about.room1Type": "Type de chambre",
+  "about.room1Desc": "Description de la chambre",
+  "about.room2Type": "Type de chambr",
+  "about.room2Desc": "Description de la chambre",
+  "about.room3Type": "Type de chambre",
+  "about.room3Desc": "Description de la chambre",
+  "about.room4Type": "Type de chambr",
+  "about.room4Desc": "Description de la chambre"
+}

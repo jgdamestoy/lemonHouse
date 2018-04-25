@@ -15,10 +15,6 @@ const messages = defineMessages({
     id: "noMatch.description",
     defaultMessage:
       "The address may contain typing errors. Our website may be experiencing difficulties"
-  },
-  backToHome: {
-    id: "noMatch.backToHome",
-    defaultMessage: "Back to home"
   }
 });
 
@@ -33,12 +29,12 @@ const Container = styled.div`
 `;
 const Title = styled.div`
   color: ${colors.lemonGreen}
-  font-size: ${fontSize.title}
+  font-size: ${fontSize.title.std}
   padding-bottom: 10vh;
 `;
 const Description = styled.div`
   color: ${colors.lemonGreen}
-  font-size: ${fontSize.subtitle}
+  font-size: ${fontSize.subtitle.std}
 `;
 
 /*
@@ -46,8 +42,7 @@ const Description = styled.div`
 *   to redirect to an known url
 *   or display 404
 */
-const propTypes = {
-};
+const propTypes = {};
 const defaultProps = {};
 
 const redirectCountry = (pathname, country, knownCountries) => {

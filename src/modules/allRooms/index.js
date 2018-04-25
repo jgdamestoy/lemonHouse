@@ -50,7 +50,7 @@ class AllRooms extends Component {
       <Container>
         <Title>{intl.formatMessage(messages.title)}</Title>
 
-        {data.map((item, index) => <Room room={item} />)}
+        {data.map((item, index) => <Room key={index} room={item} />)}
 
         <BookingButton
           to={CONFIG.BOOKIN_ADRESS}

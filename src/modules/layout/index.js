@@ -17,6 +17,15 @@ const Content = styled.div`
 const propTypes = {};
 
 class Layout extends Component {
+  componentDidUpdate(prevProps) {
+    /* Handle scroll on routes change */
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
+
   render() {
     const { children } = this.props;
 

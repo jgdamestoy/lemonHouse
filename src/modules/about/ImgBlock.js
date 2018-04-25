@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import Waypoint from "react-waypoint";
 
 import { breakPoints } from "config/theme";
 
 const Container = styled.div`
+  transform: ${props =>
+    props.animated ? "translateX(0%)" : "translateX(300%)"};
+  transition: transform 1s ease;
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -25,14 +29,20 @@ const defaultProps = {};
 class ImgBlock extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      animated: false
+    };
   }
+  handleAnimate = () => this.setState({ animated: true });
 
   render() {
     return (
-      <Container>
-        <Img src={this.props.img} />
-      </Container>
+      <div>
+        <Container animated={this.state.animated}>
+          <Img src={this.props.img} />
+        </Container>
+        <Waypoint scrollableAncestor={window} onEnter={this.handleAnimate} />
+      </div>
     );
   }
 }

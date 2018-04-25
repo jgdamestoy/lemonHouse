@@ -34,10 +34,10 @@ const Description = styled.div`
 `;
 
 const propTypes = {
-  type: PropTypes.string,
-  description: PropTypes.string,
+  type: PropTypes.object,
+  description: PropTypes.object,
   number: PropTypes.number,
-  id: PropTypes.number
+  id: PropTypes.string
 };
 const defaultProps = {};
 
