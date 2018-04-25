@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.6.1",
+    "babel": "^6.23.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.1.4",
     "google-map-react": "^0.34.0",
     "intl": "^1.2.5",
     "lodash": "^4.17.5",
@@ -22,9 +25,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:langs": "cross-env NODE_ENV=production babel translate.js | node"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-intl": "^2.4.0",
     "prettier": "1.12.1"
   }
 }

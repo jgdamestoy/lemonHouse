@@ -46,12 +46,16 @@ class Content extends Component {
         defaultMessage: "See the rooms"
       }
     });
+
     return (
       <Container>
         <Title>Lemon house samui</Title>
         <Description>A tiny hotel in Thaïland</Description>
         <ButtonBox>
-          <StdButton to="/rooms" label={intl.formatMessage(messages.rooms)} />
+          <StdButton
+            to="/allrooms"
+            label={intl.formatMessage(messages.rooms)}
+          />
         </ButtonBox>
       </Container>
     );

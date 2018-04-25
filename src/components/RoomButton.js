@@ -5,14 +5,10 @@ import { Link } from "react-router-dom";
 
 import { colors, fontSize, breakPoints } from "config/theme";
 
-const BookingButton = styled.a`
-  margin-top: 10vh;
-  width: 60vw;
-  text-decoration: none;
-  text-align: center;
-  font-size: ${fontSize.subtitle.mobile}
-  font-weight: bold;
+const StyledButton = styled.div`
   padding: 5px 10px;
+  font-size: ${fontSize.description.mobile}
+  font-weight: bold;
   color: white;
   border-radius: 5px;
   background-color: ${colors.lemonGreen};
@@ -22,8 +18,11 @@ const BookingButton = styled.a`
     border: 2px solid ${colors.lemonYellow};
   };
   @media (min-width: ${breakPoints.std}) {
-    font-size: ${fontSize.subtitle.std};
+    font-size: ${fontSize.description.std};
   }
+`;
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const propTypes = {
@@ -31,17 +30,18 @@ const propTypes = {
   to: PropTypes.string
 };
 
-class StdButton extends Component {
+class RoomButton extends Component {
   render() {
     const { label, to } = this.props;
+
     return (
-      <BookingButton target="_blank" href={to}>
-        {label}
-      </BookingButton>
+      <StyledLink to={to}>
+        <StyledButton>{label}</StyledButton>
+      </StyledLink>
     );
   }
 }
 
-StdButton.propTypes = propTypes;
+RoomButton.propTypes = propTypes;
 
-export default StdButton;
+export default RoomButton;

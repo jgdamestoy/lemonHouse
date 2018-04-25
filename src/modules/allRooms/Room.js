@@ -1,36 +1,33 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import {colors} from "config/theme";
 
+import { colors, breakPoints } from "config/theme";
 import RoomDescription from "./RoomDescription";
 import Carousel from "./Carousel";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   width: 80vw;
   border-bottom: 2px solid ${colors.lemonGreen};
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding: 5vh 0;
+  @media (min-width: ${breakPoints.std}) {
+    flex-direction: row;
+  }
 `;
 
 const propTypes = {
-  room: PropTypes.object,
+  room: PropTypes.object
 };
-const defaultProps = {};
 
 class Room extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
-    const { type, description, number, imgs, id } = this.props.room
+    const { type, description, number, imgs, id } = this.props.room;
 
     return (
       <Container>
-        <RoomDescription 
+        <RoomDescription
           type={type}
           description={description}
           number={number}
@@ -43,6 +40,5 @@ class Room extends Component {
 }
 
 Room.propTypes = propTypes;
-Room.defaultProps = defaultProps;
 
 export default Room;

@@ -15,5 +15,6 @@ export const config = {
   GOOGLE_MAP_ZOOM: 12,
   GOOGLE_MAP_LAT: 9.5712776,
   GOOGLE_MAP_LNG: 99.99607370000001,
-  GOOGLE_CLIENT_ID: null
+  GOOGLE_CLIENT_ID: null,
+  BOOKING_ADRESS: "https://www.booking.com/index.fr.html"
 };

@@ -6,15 +6,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
+import { breakPoints } from "config/theme";
 import Slide from "./Slide";
 
 const Container = styled.div`
-  width: 40vw;
+  width: 80vw;
+  @media (min-width: ${breakPoints.std}) {
+    width: 40vw;
+  }
 `;
 
 const propTypes = {
   imgs: PropTypes.array,
-  id: PropTypes.string,
+  id: PropTypes.string
 };
 const defaultProps = {};
 
@@ -25,7 +29,7 @@ class Template extends Component {
   }
 
   render() {
-    const {imgs, id} = this.props;
+    const { imgs, id } = this.props;
     var settings = {
       dots: true,
       infinite: true,

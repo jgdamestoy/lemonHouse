@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {colors} from "config/theme";
+import { colors } from "config/theme";
 
 import Slide from "./Slide";
 
@@ -30,7 +30,7 @@ const ArrowBox = styled.div`
 `;
 
 const propTypes = {
-  imgs: PropTypes.array,
+  imgs: PropTypes.array
 };
 const defaultProps = {};
 
@@ -52,7 +52,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-class Template extends Component {
+class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -75,16 +75,14 @@ class Template extends Component {
     return (
       <Container>
         <Slider {...fullSettings}>
-          {this.props.imgs.map((img, index) => (
-              <Slide key={index} img={img} />
-          ))}
+          {this.props.imgs.map((img, index) => <Slide key={index} img={img} />)}
         </Slider>
       </Container>
     );
   }
 }
 
-Template.propTypes = propTypes;
-Template.defaultProps = defaultProps;
+Carousel.propTypes = propTypes;
+Carousel.defaultProps = defaultProps;
 
-export default Template;
+export default Carousel;
