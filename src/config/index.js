@@ -1,18 +1,5 @@
-const titles = {
-  fr: "Lemon House Samui",
-  en: "Lemon House Samui",
-};
-
-const descriptions = {
-  fr:
-    "a tiny hotel in samui",
-  en:
-    "a tiny hotel in samui",
-};
-
 //const LOCALE = window.navigator.userLanguages || window.navigator.languages;
 const LOCALE = "fr";
-
 const LOCALE_OVERRIDE = "fr";
 
 export const config = {
@@ -21,11 +8,12 @@ export const config = {
   KNOW_COUNTRIES: ["fr", "en"],
   VERSION: "0.1.0",
   APP_TYPE: "browser",
-
-  GOOGLE_CLIENT_ID: null,
-
-  META_TITLE: titles[LOCALE_OVERRIDE || LOCALE],
-  META_DESCRIPTION: descriptions[LOCALE_OVERRIDE || LOCALE],
+  META_TITLE: "Lemon House Samui",
+  META_DESCRIPTION: "A tiny hotel in samui",
   META_IMAGE: null,
-  GOOGLE_MAP_API_KEY: "AIzaSyAA5v8QPDKFRBkMtZzs_YjQUYksvTenfjM"
+  GOOGLE_MAP_API_KEY: "AIzaSyAA5v8QPDKFRBkMtZzs_YjQUYksvTenfjM",
+  GOOGLE_MAP_ZOOM: 12,
+  GOOGLE_MAP_LAT: 9.5712776,
+  GOOGLE_MAP_LNG: 99.99607370000001,
+  GOOGLE_CLIENT_ID: null
 };

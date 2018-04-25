@@ -6,16 +6,19 @@ import { withRouter } from "react-router-dom";
 import Header from "./header/";
 import Footer from "./footer/";
 
-const Container = styled.div`
-`;
+const Container = styled.div``;
 /* Hanlde min-height on all the App */
-const Content = styled.div`min-height: calc(100vh);`;
+const Content = styled.div`
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+`;
 
 const propTypes = {};
 
 class Layout extends Component {
   render() {
-    const { children  } = this.props;
+    const { children } = this.props;
 
     return (
       <Container>

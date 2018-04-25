@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import styled from "styled-components";
 
+import { assets } from "config/theme";
+
 const Video = styled.video`
   position: absolute;
   top: 50%;
@@ -18,10 +20,10 @@ class Background extends PureComponent {
         autoPlay
         loop="loop"
         preload="true"
-        poster={`/img/IMG_5970.JPG`}
-        src={`/video/videoCover.mp4`}
+        poster={assets.posterHomeCoverUrl}
+        src={assets.videoHomeCoverUrl}
       />
-    )
+    );
   }
 }
 

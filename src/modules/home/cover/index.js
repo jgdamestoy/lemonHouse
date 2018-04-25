@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { injectIntl, defineMessages } from "react-intl";
 
+import { fontSize, breakPoints } from "config/theme";
 import Background from "./Background";
 
 const Container = styled.div`
@@ -20,48 +20,33 @@ const Content = styled.div`
   justify-content: center;
 `;
 const Title = styled.div`
-  padding: 0vw 5vw;
-  font-family: avenir-black;
+  padding: 3vh 5vw;
   text-transform: uppercase
-  font-size: 40px;
-  font-weight: 600;
-  @media (min-width: 800px) {
-    font-size: 65px;
+  font-size: ${fontSize.mainTitle.mobile};
+  font-weight: bold;
+  @media (min-width: ${breakPoints.std}) {
+    font-size: ${fontSize.mainTitle.std};
   }
 `;
 const Description = styled.div`
   padding: 0vw 5vw;
-  font-size: 30px;
+  font-size: ${fontSize.title.mobile};
   line-height: 25px;
-  @media (min-width: 800px) {
-    font-size: 50px;
+  @media (min-width: ${breakPoints.std}) {
+    font-size: ${fontSize.title.std};
   }
 `;
 
-const messages = defineMessages({
-  title: {
-    id: "Cover.title",
-    defaultMessage: "Lemon house samui"
-  },
-  description: {
-    id: "Cover.description",
-    defaultMessage:
-      "A tiny hotel in Thaïland"
-  },
-});
-
-const Cover = ({ intl }) => {
+const Cover = () => {
   return (
     <Container>
       <Background />
       <Content>
-        <Title>
-          {intl.formatMessage(messages.title)}
-        </Title>
-        <Description>{intl.formatMessage(messages.description)}</Description>
+        <Title>Lemon house samui</Title>
+        <Description>A tiny hotel in Thaïland</Description>
       </Content>
     </Container>
   );
 };
 
-export default injectIntl(Cover);
+export default Cover;
