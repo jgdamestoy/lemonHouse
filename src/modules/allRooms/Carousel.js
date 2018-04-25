@@ -41,9 +41,7 @@ class Carousel extends Component {
       <Container>
         <Slider {...settings}>
           {this.props.imgs.map((img, index) => (
-            <Link key={index} to={`/room/${id}`}>
-              <Slide img={img} />
-            </Link>
+            <Slide key={index} index={index} img={img} to={`/room/${id}`} />
           ))}
         </Slider>
       </Container>
