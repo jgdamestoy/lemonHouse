@@ -1,27 +1,25 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 import { colors } from "config/theme";
 
-const Button = styled.div`
+const BookingButton = styled.a`
+  margin-top: 10vh;
+  width: 60vw;
+  text-decoration: none;
   text-align: center;
-  margin-right: 1vw;
-  padding: 1vh 1vw;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
+  padding: 5px 10px;
   color: white;
   border-radius: 5px;
-  background-color: rgba(243, 227, 49, 0.8);
+  background-color: ${colors.lemonGreen};
   border: 2px solid transparent;
   &:hover {
-    color: ${colors.lemonGreen};
-    border: 2px solid ${colors.lemonGreen};
+    color: ${colors.lemonYellow};
+    border: 2px solid ${colors.lemonYellow};
   }
-`;
-const StyledLink = styled(Link)`
-  text-decoration: none;
 `;
 
 const propTypes = {
@@ -30,17 +28,12 @@ const propTypes = {
 };
 
 class StdButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     const { label, to } = this.props;
     return (
-      <StyledLink to={to}>
-        <Button>{label}</Button>
-      </StyledLink>
+      <BookingButton target="_blank" href={to}>
+        {label}
+      </BookingButton>
     );
   }
 }

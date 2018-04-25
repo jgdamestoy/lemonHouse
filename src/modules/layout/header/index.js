@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { injectIntl, defineMessages } from "react-intl";
 
-import { colors } from "config/theme";
+import { colors, breakPoints } from "config/theme";
 import StdButton from "components/StdButton";
 
 const Wrapper = styled.div`
@@ -23,8 +23,18 @@ const Wrapper = styled.div`
   background-color: ${props =>
     props.scrolled ? "rgba(240, 240, 240, 0.5)" : "transparent"};
 `;
-const Logo = styled.img`
-  width: ${props => (props.scrolled ? "320px" : "50px")};
+const Logo = styled.div`
+  background: url("/img/logo.png") no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  height: 60px;
+  @media (min-width: ${breakPoints.std}) {
+    background: ${props =>
+        props.scrolled ? `url("/img/logoH.png")` : `url("/img/logo.png")`}
+      no-repeat center center;
+    background-size: contain;
+    width: ${props => (props.scrolled ? "320px" : "50px")};
+  }
 `;
 const LeftContent = styled.div`
   margin-left: 2vw;
@@ -77,7 +87,8 @@ class ClassicHeader extends Component {
         <LeftContent>
           <Link to="/">
             <Logo
-              src={this.state.scrolled ? "/img/logoH.png" : "/img/logo.png"}
+              backgroundImgLong="/img/logoH.png"
+              backgroundImg="/img/logoH.png"
               scrolled={this.state.scrolled}
             />
           </Link>

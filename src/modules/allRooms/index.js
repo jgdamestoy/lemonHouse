@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { colors } from "config/theme";
-import {data} from "modules/roomsData";
+import { data } from "modules/roomsData";
 import { Link } from "react-router-dom";
 
 import Room from "./Room";
+import BookingButton from "components/BookingButton";
 
 const Container = styled.div`
   padding: 5vw 10vw;
@@ -26,23 +27,6 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const BookingButton = styled.a`
-  margin-top: 10vh;
-  width: 60vw;
-  text-decoration: none;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 5px 10px;
-  color: white;
-  border-radius: 5px;
-  background-color: ${colors.lemonGreen};
-  border: 2px solid transparent;
-  &:hover {
-    color: ${colors.lemonYellow};
-    border: 2px solid ${colors.lemonYellow};
-  };
-`;
 
 const propTypes = {};
 const defaultProps = {};
@@ -57,15 +41,13 @@ class AllRooms extends Component {
     return (
       <Container>
         <Title>Nos Chambres</Title>
-        
-        {data.map((item, index) => <Room room={item} /> )}
-        
-        <BookingButton 
-          target="_blank"
-          href="https://www.booking.com/index.fr.html"
-        >
-          Book Now
-        </BookingButton>
+
+        {data.map((item, index) => <Room room={item} />)}
+
+        <BookingButton
+          to="https://www.booking.com/index.fr.html"
+          label="Book now"
+        />
       </Container>
     );
   }
