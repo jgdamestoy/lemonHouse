@@ -44,6 +44,7 @@ export const data = [
       "/img/moakBedRoom2.jpeg",
       "/img/moakBedRoom3.jpeg"
     ],
+    slug: "large",
     type: messages.room1Type,
     description: messages.room1Desc,
     number: 2
@@ -55,6 +56,7 @@ export const data = [
       "/img/moakBedRoom2.jpeg",
       "/img/moakBedRoom3.jpeg"
     ],
+    slug: "medium",
     type: messages.room2Type,
     description: messages.room2Desc,
     number: 1
@@ -66,6 +68,7 @@ export const data = [
       "/img/moakBedRoom2.jpeg",
       "/img/moakBedRoom3.jpeg"
     ],
+    slug: "regular",
     type: messages.room3Type,
     description: messages.room3Desc,
     number: 2
@@ -77,6 +80,7 @@ export const data = [
       "/img/moakBedRoom2.jpeg",
       "/img/moakBedRoom3.jpeg"
     ],
+    slug: "awesome",
     type: messages.room4Type,
     description: messages.room4Desc,
     number: 2

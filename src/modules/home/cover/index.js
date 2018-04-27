@@ -13,7 +13,6 @@ const Container = styled.div`
 const Cover = () => {
   return (
     <Container>
-      <Background />
       <Content />
     </Container>
   );

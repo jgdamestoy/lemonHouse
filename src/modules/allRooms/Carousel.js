@@ -18,7 +18,8 @@ const Container = styled.div`
 
 const propTypes = {
   imgs: PropTypes.array,
-  id: PropTypes.string
+  id: PropTypes.string,
+  handleChangeState: PropTypes.func
 };
 const defaultProps = {};
 
@@ -29,7 +30,7 @@ class Carousel extends Component {
   }
 
   render() {
-    const { imgs, id } = this.props;
+    const { imgs, id, handleChangeState, slug } = this.props;
     var settings = {
       dots: true,
       infinite: true,
@@ -41,7 +42,13 @@ class Carousel extends Component {
       <Container>
         <Slider {...settings}>
           {this.props.imgs.map((img, index) => (
-            <Slide key={index} index={index} img={img} to={`/room/${id}`} />
+            <Slide
+              key={index}
+              index={index}
+              img={img}
+              slug={slug}
+              handleChangeState={handleChangeState}
+            />
           ))}
         </Slider>
       </Container>

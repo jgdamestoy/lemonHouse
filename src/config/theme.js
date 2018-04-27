@@ -3,7 +3,7 @@ export const colors = {
   lemonGreen: "#529542",
   lightWhite: "white",
 
-  backgroundTextBlock: "rgba(243, 227, 49, 0.3)"
+  backgroundTextBlock: "rgba(243, 227, 49, 0.8)"
 };
 
 export const breakPoints = {

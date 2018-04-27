@@ -59,12 +59,15 @@ class Carousel extends Component {
   }
 
   render() {
+    const { imgs, imgIndex } = this.props;
     var settings = {
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      initialSlide: imgIndex,
+      lazyLoad: "progressive"
     };
     const fullSettings = {
       ...settings,
@@ -75,7 +78,7 @@ class Carousel extends Component {
     return (
       <Container>
         <Slider {...fullSettings}>
-          {this.props.imgs.map((img, index) => <Slide key={index} img={img} />)}
+          {imgs.map((img, index) => <Slide key={index} img={img} />)}
         </Slider>
       </Container>
     );

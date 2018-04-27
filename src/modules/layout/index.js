@@ -5,6 +5,7 @@ import { withRouter } from "react-router-dom";
 
 import Header from "./header/";
 import Footer from "./footer/";
+import Background from "./Background";
 
 const Container = styled.div``;
 /* Hanlde min-height on all the App */
@@ -34,6 +35,7 @@ class Layout extends Component {
         <Header />
         <Content id="content-wrapper">{children}</Content>
         <Footer />
+        <Background />
       </Container>
     );
   }

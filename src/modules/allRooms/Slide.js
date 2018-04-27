@@ -10,40 +10,31 @@ const Img = styled.img`
 `;
 
 const propTypes = {
-  img: PropTypes.string
+  img: PropTypes.string,
+  handleChangeState: PropTypes.func
 };
 const defaultProps = {};
 
 class Slide extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      startAnimation: false,
-      dimensions: {}
-    };
-  }
-
   handleClick = () => {
+    const { slug, index, img } = this.props;
     const { top, left, width, height } = document
       .getElementById(`${this.props.index}`)
       .getBoundingClientRect();
-    this.setState({
+
+    this.props.handleChangeState({
+      url: `/room/${slug}/${index}`,
+      img: img,
       startAnimation: true,
       dimensions: { top, left, width, height }
     });
   };
 
   render() {
-    const { url, img } = this.props;
+    const { img } = this.props;
     return (
       <Container onClick={this.handleClick}>
         <Img src={img} id={this.props.index} />
-        <AnimateToCover
-          url={url}
-          image={img}
-          dimensions={this.state.dimensions}
-          display={this.state.startAnimation}
-        />
       </Container>
     );
   }

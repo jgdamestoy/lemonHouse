@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import {colors} from "config/theme";
+import { colors } from "config/theme";
 
 const Container = styled.div`
   height: 60px;
   display: flex;
   border-top: 2px solid ${colors.lemonGreen};
-  background-color: rgba(243, 227, 49, 0.5);
+  background-color: rgba(243, 227, 49, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;

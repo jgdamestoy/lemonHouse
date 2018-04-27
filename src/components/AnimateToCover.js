@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Redirect } from "react-router-dom";
+
+import { config as CONFIG } from "config/";
 
 const ANIMATION_DURATION = 500;
 
@@ -7,8 +10,9 @@ const Animation = styled.div`
   background-image: url(${props => props.image});
   background-size: cover;
   background-position: center center;
-  background-color: "white";
+  background-color: white;
   position: fixed;
+  display: block;
   z-index: 1000;
   transition: top ${ANIMATION_DURATION}ms, left ${ANIMATION_DURATION}ms,
     width ${ANIMATION_DURATION}ms, height ${ANIMATION_DURATION}ms;
@@ -16,9 +20,9 @@ const Animation = styled.div`
     inProgress
       ? `
         top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        width: 100vw;
+        height: 100vh;
       `
       : `
         top: ${dimensions.top}px;
@@ -50,10 +54,10 @@ class AnimateToCover extends Component {
 
   render() {
     const { display, playlist, height, url } = this.props;
+    console.log(this.props.image);
 
-    if (this.state.complete && playlist) {
-      console.log("redirect to ", url);
-      //history.push(to);
+    if (this.state.complete) {
+      return <Redirect to={`/${CONFIG.LOCALE.concat(url)}`} />;
     } else {
       if (display) {
         window.scrollTo(0, 0);

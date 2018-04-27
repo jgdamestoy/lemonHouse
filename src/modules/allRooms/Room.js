@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { colors, breakPoints } from "config/theme";
 import RoomDescription from "./RoomDescription";
 import Carousel from "./Carousel";
+import AnimateToCover from "components/AnimateToCover";
 
 const Container = styled.div`
   display: flex;
@@ -22,8 +23,28 @@ const propTypes = {
 };
 
 class Room extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      url: null,
+      img: null,
+      startAnimation: false,
+      dimensions: {}
+    };
+  }
+
+  handleChangeState = state => {
+    console.log(state);
+    this.setState({
+      url: state.url,
+      img: state.img,
+      startAnimation: state.startAnimation,
+      dimensions: state.dimensions
+    });
+  };
+
   render() {
-    const { type, description, number, imgs, id } = this.props.room;
+    const { type, description, number, imgs, id, slug } = this.props.room;
 
     return (
       <Container>
@@ -32,8 +53,20 @@ class Room extends Component {
           description={description}
           number={number}
           id={id}
+          slug={slug}
         />
-        <Carousel imgs={imgs} id={id} />
+        <Carousel
+          imgs={imgs}
+          id={id}
+          slug={slug}
+          handleChangeState={this.handleChangeState}
+        />
+        <AnimateToCover
+          url={this.state.url}
+          image={this.state.img}
+          dimensions={this.state.dimensions}
+          display={this.state.startAnimation}
+        />
       </Container>
     );
   }

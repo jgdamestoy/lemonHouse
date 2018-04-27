@@ -28,8 +28,9 @@ const propTypes = {
 
 class Room extends Component {
   render() {
-    const currentId = this.props.match.params.id;
-    const room = data.filter(item => item.id === currentId)[0];
+    const imgIndex = this.props.match.params.imgIndex;
+    const currentSlug = this.props.match.params.slug;
+    const room = data.filter(item => item.slug === currentSlug)[0];
     const { type, description, number, imgs, id } = room;
 
     const { intl } = this.props;
@@ -41,7 +42,7 @@ class Room extends Component {
     });
     return (
       <Container>
-        <Carousel imgs={room.imgs} />
+        <Carousel imgs={room.imgs} imgIndex={imgIndex} />
 
         <Content>
           <RoomDescription

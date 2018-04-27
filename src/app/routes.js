@@ -28,7 +28,7 @@ class Routes extends Component {
         <Route exact path={`/${country}`} component={Home} />
         <Route path={`/${country}/about`} component={About} />
         <Route path={`/${country}/allrooms`} component={AllRooms} />
-        <Route path={`/${country}/room/:id`} component={Room} />
+        <Route path={`/${country}/room/:slug/:imgIndex?`} component={Room} />
 
         <Route render={props => <NoMatch country={country} {...props} />} />
       </Switch>
