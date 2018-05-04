@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import { colors, fontSize, breakPoints } from "config/theme";
@@ -33,15 +32,7 @@ const Content = styled.div`
   }
 `;
 
-const propTypes = {};
-const defaultProps = {};
-
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
       <Container>
@@ -55,8 +46,5 @@ class Contact extends Component {
     );
   }
 }
-
-Contact.propTypes = propTypes;
-Contact.defaultProps = defaultProps;
 
 export default Contact;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 
@@ -15,16 +14,33 @@ const Content = styled.div`
   overflow-x: hidden;
 `;
 
-const propTypes = {};
+function detectmob() {
+  if (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 class Layout extends Component {
   componentDidUpdate(prevProps) {
     /* Handle scroll on routes change */
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
+    window.scroll(
+      {
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      },
+      null
+    );
   }
 
   render() {
@@ -40,7 +56,4 @@ class Layout extends Component {
     );
   }
 }
-
-Layout.propTypes = propTypes;
-
 export default withRouter(Layout);

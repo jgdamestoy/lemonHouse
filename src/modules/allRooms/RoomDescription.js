@@ -40,7 +40,7 @@ const propTypes = {
 
 class RoomDescription extends Component {
   render() {
-    const { type, description, number, id, intl, slug } = this.props;
+    const { type, intl, slug } = this.props;
     const messages = defineMessages({
       room: {
         id: "allRooms.seeRoomButton",
@@ -54,7 +54,7 @@ class RoomDescription extends Component {
 
         <RoomButton
           label={intl.formatMessage(messages.room)}
-          to={`/room/${slug}`}
+          to={`/room/${slug}/0`}
         />
       </Container>
     );

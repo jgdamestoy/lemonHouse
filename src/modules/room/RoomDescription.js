@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { injectIntl } from "react-intl";
 
 import { colors, fontSize, breakPoints } from "config/theme";
-import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +47,7 @@ class RoomDescription extends Component {
   }
 
   render() {
-    const { type, description, number, id, intl } = this.props;
+    const { type, description, intl } = this.props;
 
     return (
       <Container>

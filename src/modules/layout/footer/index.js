@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 import { colors } from "config/theme";
 
@@ -23,15 +22,7 @@ const Logo = styled.img`
   border-radius: 25px;
 `;
 
-const propTypes = {};
-const defaultProps = {};
-
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
       <Container>
@@ -43,8 +34,5 @@ class Footer extends Component {
     );
   }
 }
-
-Footer.propTypes = propTypes;
-Footer.defaultProps = defaultProps;
 
 export default Footer;

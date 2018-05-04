@@ -5,7 +5,6 @@ import { injectIntl, defineMessages } from "react-intl";
 
 import { config as CONFIG } from "config/";
 import { data } from "config/roomsData";
-import { colors } from "config/theme";
 import Carousel from "./Carousel";
 import RoomDescription from "./RoomDescription";
 import BookingButton from "components/BookingButton";
@@ -42,7 +41,7 @@ class Room extends Component {
     });
     return (
       <Container>
-        <Carousel imgs={room.imgs} imgIndex={imgIndex} />
+        <Carousel imgs={imgs} imgIndex={imgIndex} />
 
         <Content>
           <RoomDescription

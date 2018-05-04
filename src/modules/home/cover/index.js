@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Background from "./Background";
 import Content from "./Content";
 
 const Container = styled.div`

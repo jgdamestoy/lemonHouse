@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import AnimateToCover from "components/AnimateToCover";
-
 const Container = styled.div``;
 const Img = styled.img`
   width: 100%;

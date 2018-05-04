@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
 
 import { breakPoints } from "config/theme";
 import Slide from "./Slide";
@@ -30,7 +29,7 @@ class Carousel extends Component {
   }
 
   render() {
-    const { imgs, id, handleChangeState, slug } = this.props;
+    const { imgs, handleChangeState, slug } = this.props;
     var settings = {
       dots: true,
       infinite: true,
@@ -41,7 +40,7 @@ class Carousel extends Component {
     return (
       <Container>
         <Slider {...settings}>
-          {this.props.imgs.map((img, index) => (
+          {imgs.map((img, index) => (
             <Slide
               key={index}
               index={index}

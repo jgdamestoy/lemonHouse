@@ -6,8 +6,7 @@
 */
 
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import { config as CONFIG } from "config";
 

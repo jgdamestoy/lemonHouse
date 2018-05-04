@@ -4,7 +4,6 @@
 *   that can be override in the config for test
 */
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 import { IntlProvider } from "react-intl";
 import { addLocaleData } from "react-intl";
@@ -13,10 +12,27 @@ import fr from "react-intl/locale-data/fr";
 import { config as CONFIG } from "config/";
 import translations from "config/translations/";
 
-addLocaleData([...fr, ...en]);
+/* -------- Init Intl ----------------- */
+var areIntlLocalesSupported = require("intl-locales-supported");
 
-const propTypes = {};
-const defaultProps = {};
+var localesMyAppSupports = ["en", "fr", "de"];
+
+if (global.Intl) {
+  // Determine if the built-in `Intl` has the locale data we need.
+  if (!areIntlLocalesSupported(localesMyAppSupports)) {
+    // `Intl` exists, but it doesn't have the data we need, so load the
+    // polyfill and patch the constructors we need with the polyfill's.
+    var IntlPolyfill = require("intl");
+    Intl.NumberFormat = IntlPolyfill.NumberFormat;
+    Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat;
+  }
+} else {
+  // No `Intl`, so use and load the polyfill.
+  global.Intl = require("intl");
+}
+/* --------- end of Intl part -------------*/
+
+addLocaleData([...fr, ...en]);
 
 class IntlConnect extends Component {
   render() {
@@ -30,8 +46,5 @@ class IntlConnect extends Component {
     );
   }
 }
-
-IntlConnect.propTypes = propTypes;
-IntlConnect.defaultProps = defaultProps;
 
 export default IntlConnect;

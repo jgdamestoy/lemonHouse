@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Router } from "react-router-dom";
-import ReactGA from "react-ga";
+//import ReactGA from "react-ga";
 import styled from "styled-components";
 
 import meta from "helpers/metaHelper";

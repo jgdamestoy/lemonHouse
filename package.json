@@ -9,6 +9,7 @@
     "cross-env": "^5.1.4",
     "google-map-react": "^0.34.0",
     "intl": "^1.2.5",
+    "intl-locales-supported": "^1.0.0",
     "lodash": "^4.17.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

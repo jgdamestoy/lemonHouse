@@ -53,7 +53,7 @@ class AnimateToCover extends Component {
   }
 
   render() {
-    const { display, playlist, height, url } = this.props;
+    const { display, url } = this.props;
     console.log(this.props.image);
 
     if (this.state.complete) {
