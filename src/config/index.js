@@ -26,5 +26,7 @@ export const config = {
   GOOGLE_CLIENT_ID: null,
   BOOKING_ADRESS: "https://goo.gl/uCzDq5",
   CDN: "",
-  ALT_IMG: "/img/dog.jpg"
+  ALT_IMG: "/img/dog.jpg",
+  FACEBBOK_URL: "https://www.facebook.com/Lemon-House-Samui-1077290535614338/",
+  TWITTER_URL: "https://twitter.com/lemonhousesamui"
 };
