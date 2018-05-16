@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import styled from "styled-components";
 
+import { config as CONFIG } from "config/";
 import { assets } from "config/theme";
 
 const Video = styled.video`
@@ -21,8 +22,8 @@ class Background extends PureComponent {
         autoPlay
         loop="loop"
         preload="true"
-        poster={assets.posterHomeCoverUrl}
-        src={assets.videoHomeCoverUrl}
+        poster={CONFIG.CDN.concat(assets.posterHomeCoverUrl)}
+        src={CONFIG.CDN.concat(assets.videoHomeCoverUrl)}
       />
     );
   }

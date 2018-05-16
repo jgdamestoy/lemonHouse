@@ -14,7 +14,7 @@ const Button = styled.div`
   font-weight: bold;
   color: white;
   border-radius: 5px;
-  background-color: rgba(243, 227, 49, 0.8);
+  background-color: ${colors.lemonYellow};
   border: 2px solid transparent;
   &:hover {
     color: ${colors.lemonGreen};

@@ -15,7 +15,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${props =>
-    props.animated ? colors.backgroundTextBlock : "transparent"};
+    props.animated ? colors.background : "transparent"};
   transition: background-color 1s ease;
   border-radius: 20px;
   padding: 5vw;

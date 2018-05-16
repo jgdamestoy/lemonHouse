@@ -10,12 +10,11 @@ const StyledButton = styled.div`
   padding: 5px 10px;
   font-size: ${fontSize.description.mobile}
   font-weight: bold;
-  color: white;
+  color: ${colors.lemonYellow};
   border-radius: 5px;
   background-color: ${colors.lemonGreen};
   border: 2px solid transparent;
   &:hover {
-    color: ${colors.lemonYellow};
     border: 2px solid ${colors.lemonYellow};
   };
   @media (min-width: ${breakPoints.std}) {

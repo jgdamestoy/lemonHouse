@@ -9,13 +9,15 @@ import { IntlProvider } from "react-intl";
 import { addLocaleData } from "react-intl";
 import en from "react-intl/locale-data/en";
 import fr from "react-intl/locale-data/fr";
+import es from "react-intl/locale-data/es";
+import de from "react-intl/locale-data/de";
 import { config as CONFIG } from "config/";
 import translations from "config/translations/";
 
 /* -------- Init Intl ----------------- */
 var areIntlLocalesSupported = require("intl-locales-supported");
 
-var localesMyAppSupports = ["en", "fr", "de"];
+var localesMyAppSupports = ["en", "fr", "de", "es"];
 
 if (global.Intl) {
   // Determine if the built-in `Intl` has the locale data we need.
@@ -32,7 +34,7 @@ if (global.Intl) {
 }
 /* --------- end of Intl part -------------*/
 
-addLocaleData([...fr, ...en]);
+addLocaleData([...fr, ...en, ...es, ...de]);
 
 class IntlConnect extends Component {
   render() {

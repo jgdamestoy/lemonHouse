@@ -1,4 +1,5 @@
 import { defineMessages } from "react-intl";
+import { config as CONFIG } from "config";
 
 const messages = defineMessages({
   block1: {
@@ -7,7 +8,7 @@ const messages = defineMessages({
       "We are a couple of new French managers and our hotel is located close to Maenam Beach and Walking Street, where you'll find lots of bars and restaurants and a colorful market every Thursday night."
   },
   block2: {
-    id: "about.block1",
+    id: "about.block2",
     defaultMessage:
       'We welcome you in a green and quiet with a functioning "Guest House", where the atmosphere will be friendly and family. Good mood, smiles and laughter will be the watchwords. We will do everything to make your stay enjoyable and that you keep the best memories. You will be able to pass here in a few minutes from the tumult of the Main Road to the silence of a small tropical garden.'
   },
@@ -41,37 +42,37 @@ const messages = defineMessages({
 export const data = [
   {
     text: messages.block1,
-    img: "/img/IMG_5970.JPG",
+    img: `${CONFIG.CDN}/img/walkingstreetmaenam.jpg`,
     pos: "right"
   },
   {
     text: messages.block2,
-    img: "/img/IMG_5743.JPG",
+    img: `${CONFIG.CDN}/img/pool.jpg`,
     pos: "left"
   },
   {
     text: messages.block3,
-    img: "/img/IMG_5744.JPG",
+    img: `${CONFIG.CDN}/img/desk.jpg`,
     pos: "right"
   },
   {
     text: messages.block4,
-    img: "/img/IMG_5745.JPG",
+    img: `${CONFIG.CDN}/img/room.jpg`,
     pos: "left"
   },
   {
     text: messages.block5,
-    img: "/img/IMG_5756.JPG",
+    img: `${CONFIG.CDN}/img/breakfast.jpg`,
     pos: "right"
   },
   {
     text: messages.block6,
-    img: "/img/IMG_5769.JPG",
+    img: `${CONFIG.CDN}/img/dog.jpg`,
     pos: "left"
   },
   {
-    text: messages.block6,
-    img: "/img/IMG_5970.JPG",
+    text: messages.block7,
+    img: `${CONFIG.CDN}/img/scooters.jpg`,
     pos: "right"
   }
 ];

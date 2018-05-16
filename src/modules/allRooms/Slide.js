@@ -2,9 +2,18 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+import { breakPoints } from "config/theme";
+
 const Container = styled.div``;
-const Img = styled.img`
-  width: 100%;
+const Img = styled.div`
+  width: 80vw;
+  height: 42vw;
+  background: url(${props => props.backgroundImg}) no-repeat center center;
+  background-size: cover;
+  @media (min-width: ${breakPoints.std}) {
+    width: 40vw;
+    height: 21vw;
+  }
 `;
 
 const propTypes = {
@@ -32,7 +41,7 @@ class Slide extends Component {
     const { img } = this.props;
     return (
       <Container onClick={this.handleClick}>
-        <Img src={img} id={this.props.index} />
+        <Img backgroundImg={img} id={this.props.index} />
       </Container>
     );
   }

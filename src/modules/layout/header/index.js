@@ -21,16 +21,18 @@ const Wrapper = styled.div`
     props.scrolled ? `2px solid ${colors.lemonYellow}` : "none"};
   transition: background-color 1s ease;
   background-color: ${props =>
-    props.scrolled ? "rgba(240, 240, 240, 0.5)" : "transparent"};
+    props.scrolled ? `${colors.background}` : "transparent"};
 `;
 const Logo = styled.div`
-  background: url("/img/logo.png") no-repeat center center;
+  background: url("${CONFIG.CDN}/img/lemon.png") no-repeat center center;
   background-size: contain;
   width: 50px;
   height: 60px;
   @media (min-width: ${breakPoints.std}) {
     background: ${props =>
-        props.scrolled ? `url("/img/logoH.png")` : `url("/img/logo.png")`}
+      props.scrolled
+        ? `url("${CONFIG.CDN}/img/lemon-h.png")`
+        : `url("${CONFIG.CDN}/img/lemon.png")`}
       no-repeat center center;
     background-size: contain;
     width: ${props => (props.scrolled ? "320px" : "50px")};

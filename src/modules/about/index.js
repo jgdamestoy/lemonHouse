@@ -25,7 +25,7 @@ const Block = styled.div`
   padding: 2vh 0;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid ${colors.lemonGreen};
+  border-bottom: 2px solid ${colors.lemonYellow};
   @media (min-width: ${breakPoints.std}) {
     flex-direction: row;
   }

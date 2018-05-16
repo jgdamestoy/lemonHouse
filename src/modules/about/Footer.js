@@ -48,7 +48,7 @@ class Footer extends Component {
       <Container>
         <Text>{intl.formatMessage(messages.title)}</Text>
 
-        <ImgFooter src={assets.imgFooterAboutUrl} />
+        <ImgFooter src={CONFIG.CDN.concat(assets.imgFooterAboutUrl)} />
 
         <BookingButton
           label={intl.formatMessage(messages.book)}

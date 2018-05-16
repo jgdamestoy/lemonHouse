@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 80vw;
-  border-bottom: 2px solid ${colors.lemonGreen};
+  border-bottom: 2px solid ${colors.lemonYellow};
   padding: 5vh 0;
   @media (min-width: ${breakPoints.std}) {
     flex-direction: row;

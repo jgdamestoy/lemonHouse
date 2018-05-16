@@ -1,9 +1,8 @@
 export const colors = {
-  lemonYellow: "#f3e331",
-  lemonGreen: "#529542",
+  lemonYellow: "#4ABDAC",
+  lemonGreen: "white",
   lightWhite: "white",
-
-  backgroundTextBlock: "rgba(243, 227, 49, 0.8)"
+  background: "rgba(255, 255, 255, 0.2)"
 };
 
 export const breakPoints = {
@@ -34,7 +33,7 @@ export const fontSize = {
 };
 
 export const assets = {
-  posterHomeCoverUrl: "/img/IMG_5970.JPG",
+  posterHomeCoverUrl: "/img/poster.png",
   videoHomeCoverUrl: "/video/videoCover.mp4",
-  imgFooterAboutUrl: "/img/IMG_5970.JPG"
+  imgFooterAboutUrl: "/img/garden.jpg"
 };

@@ -12,7 +12,7 @@ const BookingButton = styled.a`
   font-size: ${fontSize.subtitle.mobile}
   font-weight: bold;
   padding: 5px 10px;
-  color: white;
+  color: ${colors.lemonYellow};
   border-radius: 5px;
   background-color: ${colors.lemonGreen};
   border: 2px solid transparent;

@@ -17,9 +17,11 @@ const Container = styled.div`
 `;
 const Title = styled.div`
   color: ${colors.lemonGreen};
+  padding: 0 1vw;
+  border-radius: 5px;
   font-size: ${fontSize.title.mobile};
   font-weight: bold;
-  padding-bottom: 3vh;
+  margin-bottom: 3vh;
   @media (min-width: ${breakPoints.std}) {
     font-size: ${fontSize.title.std};
   }
