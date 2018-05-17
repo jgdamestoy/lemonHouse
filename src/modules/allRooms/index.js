@@ -5,6 +5,7 @@ import { injectIntl, defineMessages } from "react-intl";
 import { config as CONFIG } from "config/";
 import { colors, breakPoints, fontSize } from "config/theme";
 import { data } from "config/roomsData";
+import Description from "./Description";
 import Room from "./Room";
 import BookingButton from "components/BookingButton";
 
@@ -49,6 +50,8 @@ class AllRooms extends Component {
     return (
       <Container>
         <Title>{intl.formatMessage(messages.title)}</Title>
+
+        <Description />
 
         {data.map((item, index) => <Room key={index} room={item} />)}
 

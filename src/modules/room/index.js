@@ -14,8 +14,8 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   position: absolute;
-  padding: 5vw;
-  bottom: 10vh;
+  padding: 5vh 3vw;
+  bottom: 5vh;
   left: 10vw;
   background-color: rgba(230, 230, 230, 0.5);
   border-radius: 25px;

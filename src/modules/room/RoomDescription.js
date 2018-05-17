@@ -10,11 +10,11 @@ const Container = styled.div`
   flex-direction: column;
   width: 70vw;
   @media (min-width: ${breakPoints.std}) {
-    width: 40vw;
+    width: 50vw;
   }
 `;
 const Type = styled.div`
-  color: ${colors.lemonGreen};
+  color: ${colors.lemonYellow};
   font-size: ${fontSize.subtitle.mobile};
   font-weight: bold;
   text-transform: uppercase;

@@ -13,9 +13,10 @@ const Container = styled.div`
   justify-content: center;
   padding-bottom: 5vh;
   @media (min-width: ${breakPoints.std}) {
-    width: 40vw;
+    width: 30vw;
     flex-direction: column;
     padding-bottom: 0vh;
+    padding-right: 3vw;
   }
 `;
 const Type = styled.div`
@@ -24,23 +25,34 @@ const Type = styled.div`
   font-weight: bold;
   text-transform: uppercase;
   padding-right: 10vw;
+  text-align: center;
   @media (min-width: ${breakPoints.std}) {
     font-size: ${fontSize.subtitle.std};
-    padding-bottom: 10vh;
+    padding-bottom: 3vh;
+    padding-right: 0vw;
+  }
+`;
+const Title = styled.div`
+  color: ${colors.lemonGreen};
+  font-size: ${fontSize.std.mobile};
+  padding-right: 10vw;
+  @media (min-width: ${breakPoints.std}) {
+    font-size: ${fontSize.std.std};
+    padding-bottom: 5vh;
     padding-right: 0vw;
   }
 `;
 
 const propTypes = {
   type: PropTypes.object,
-  description: PropTypes.object,
+  title: PropTypes.object,
   number: PropTypes.number,
   id: PropTypes.string
 };
 
 class RoomDescription extends Component {
   render() {
-    const { type, intl, slug } = this.props;
+    const { type, title, intl, slug } = this.props;
     const messages = defineMessages({
       room: {
         id: "allRooms.seeRoomButton",
@@ -51,6 +63,7 @@ class RoomDescription extends Component {
     return (
       <Container>
         <Type>{intl.formatMessage(type)}</Type>
+        <Title>{intl.formatMessage(title)}</Title>
 
         <RoomButton
           label={intl.formatMessage(messages.room)}

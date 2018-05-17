@@ -11,8 +11,8 @@ const Img = styled.div`
   background: url(${props => props.backgroundImg}) no-repeat center center;
   background-size: cover;
   @media (min-width: ${breakPoints.std}) {
-    width: 40vw;
-    height: 21vw;
+    width: 50vw;
+    height: 25vw;
   }
 `;
 

@@ -10,6 +10,18 @@
   "allRooms.title": "Nos chambres",
   "allRooms.book": "Reserver",
   "allRooms.seeRoomButton": "Voir les chambres",
+  "allRooms.description1":
+    "Toutes les chambres ont un accès gratuit à la piscine avec à votre disposition en libre-service des serviettes de plages.",
+  "allRooms.description2":
+    "Le wifi est gratuit et disponible dans tout l’hôtel.",
+  "allRooms.description3":
+    "Gel douche et savon à disposition dans chaque salle de bain, et 2 bouteilles d’eau par jour.",
+  "allRooms.description4":
+    "Sèche-cheveux à votre disposition sur demande au bar.",
+  "allRooms.description5":
+    "Certaines chambres peuvent accueillir un à deux lits d’appoint qui sont facturés 200 THB chacun par jour (or petit déjeuner) à régler directement à l’hôtel au moment du check-in.",
+  "allRooms.description6":
+    "Le petit déjeuner est au prix de 250 THB par personne et par jour il comprend : Boisson chaude à volonté, Un jus de fruits (orange, goyave ou ananas), Un petit pain français cuit du jour, Un mini pain au chocolat, Un mini croissant, Beurre, Confiture, 2 œufs, au plat, ou en omelette, Bacon, 1 assiette de fruits frais du jour.",
   "about.title":
     "Nouveaux proprietaires et nouvelle equipe depuis mi-mars 2018",
   "about.block1":
@@ -30,11 +42,20 @@
     "Nous parlons français et anglais et serons heureux de vous rencontrer. Stephanie et Jean.",
   "aboutFooter.book": "Reserver",
   "about.room1Type": "chambre double supérieure",
-  "about.room1Desc": "Description de la chambre",
+  "about.room1Title": "Une chambre avec salon au deuxième étage.",
+  "about.room1Desc":
+    "D’une surface aux alentours de 47m2, elles se situent au 2ème étage, disposent d’un joli balcon avec vue mer. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude. D’un espace salon, avec coin repas, évier, mini frigo, micro-onde, bouilloire Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui, ainsi que d’un coffre-fort. Cette chambre peut accueillir au maximum 2 lits d’appoint",
   "about.room2Type": "chambre standart twin",
-  "about.room2Desc": "Description de la chambre",
+  "about.room2Title": "Une chambre simple et calme, en rez-de-jardin.",
+  "about.room2Desc":
+    "D’une surface aux environs de 23m2, elle se situe en rez de jardin et de piscine. D’un confort simple mais agréable elle est pourvue de 2 lits simples, dispose de sa propre salle de bain avec douche à l’italienne et eau chaude. Elle dispose pour votre confort d’une climatisation, d’un mini frigo, d’une télévision écran plat avec câble Samui, d’une bouilloire ainsi que d’un coffre-fort. De par sa petite surface cette chambre ne peut pas accepter de lit d’appoint ",
   "about.room3Type": "Loft rooftop avec jacuzzi",
-  "about.room3Desc": "Description de la chambre",
+  "about.room3Title": "Une grande chambre esprit loft au troisième étage.",
+  "about.room3Desc":
+    "D’une surface aux alentours de 50m2, elle se situent au 3éme et dernier étage. Ces chambres ont un esprit loft, ouvertes sur un joli salon avec coin repas et disposent de grandes baies vitrées donnant sur une terrasse avec jacuzzi surplombant la mer. Elles sont pourvues d’un lit king size, d’une salle de bain avec douche à l’italienne et eau chaude. D’un espace salon, avec coin repas, évier, mini frigo, micro-onde, bouilloire. Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui, d’un nécessaire de repassage ainsi que d’un coffre-fort. Cette chambre par son esprit « lune de miel » ne peut accueillir de lit d’appoint.",
   "about.room4Type": "suite avec kitchenette",
-  "about.room4Desc": "Description de la chambre"
+  "about.room4Title":
+    "Un petit appartement pratique et convivial au premier étage",
+  "about.room4Desc":
+    "D’une surface aux alentours de 43 m2, elles se situent au 1er étage, disposent d’un joli balcon avec vue sur les arbres juste devant la plage de Maenam, nous ne voyons pas la mer de ces chambres mais en fonction du vent nous pouvons entendre le ressac des vagues. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude. D’une kitchenette permettant de la cuisine d’appoint, avec évier, réfrigérateur, micro-onde, bouilloire, machine à café, et de vaisselle simple pour 3 personnes, ainsi qu’une table et des chaises. Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui ainsi que d’un coffre-fort. Cette chambre peut accueillir 1 lit d’appoint avec supplément."
 }

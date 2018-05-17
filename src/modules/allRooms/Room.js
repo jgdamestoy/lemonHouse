@@ -44,13 +44,13 @@ class Room extends Component {
   };
 
   render() {
-    const { type, description, number, imgs, id, slug } = this.props.room;
+    const { type, title, number, imgs, id, slug } = this.props.room;
 
     return (
       <Container>
         <RoomDescription
           type={type}
-          description={description}
+          title={title}
           number={number}
           id={id}
           slug={slug}

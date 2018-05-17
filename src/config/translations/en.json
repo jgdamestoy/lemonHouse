@@ -8,6 +8,17 @@
   "homeCover.rooms": "See the rooms",
   "room.book": "Book now",
   "allRooms.title": "Our rooms",
+  "allRooms.description1":
+    "All rooms have free access to the pool with self-service beach towels.",
+  "allRooms.description2":
+    "The wifi is free and available throughout the hotel.",
+  "allRooms.description3":
+    "Shower gel and soap available in each bathroom, and 2 bottles of water a day.",
+  "allRooms.description4": "Hair dryer available on request at the bar.",
+  "allRooms.description5":
+    "Some rooms can accommodate one to two extra beds which are charged THB 200 each per day (or breakfast) to be paid directly to the hotel upon check-in.",
+  "allRooms.description6":
+    "Breakfast is priced at 250 THB per person per day and includes: Hot drink at will, A fruit juice (orange, guava or pineapple), A french toast baked, A mini chocolate bread, A mini croissant, Butter, Jam, 2 eggs, fried, or omelette, Bacon, 1 plate of fresh fruit of the day.",
   "allRooms.book": "Book now",
   "allRooms.seeRoomButton": "See the room",
   "about.title": "New owners and new team since half-march 2018",
@@ -29,11 +40,19 @@
     "We speak French and English and will be happy to meet you.<br /> Stephanie and Jean.",
   "aboutFooter.book": "Book now",
   "about.room1Type": "Superior double bed room",
-  "about.room1Desc": "Romm's description",
+  "about.room1Title": "A bedroom with living room on the second floor.",
+  "about.room1Desc":
+    "With a surface around 47m2, they are located on the 2nd floor, have a nice balcony with sea view. They have a king size bed, their own bathroom with walk-in shower and water hot. A lounge area, with dining area, sink, mini fridge, microwave, kettle For your comfort it also has air conditioning, a flat screen TV with cable Samui, and a safe . This room can accommodate a maximum of 2 extra beds",
   "about.room2Type": "Standart room twin",
-  "about.room2Desc": "Romm's description",
+  "about.room2Title": "A simple and quiet room, in ground garden.",
+  "about.room2Desc":
+    "With a surface around 23m2, it is located in rez of garden and swimming pool. With a simple but pleasant comfort it is provided with 2 single beds, has its own bathroom with walk-in shower and hot water. It has air conditioning, a mini fridge, a flat-screen TV with Samui cable, a kettle and a safe. Due to its small size this room can not accept extra bed",
   "about.room3Type": "Loft rooftop with jacuzzi",
-  "about.room3Desc": "Romm's description",
+  "about.room3Title": "A large loft spirit room on the third floor.",
+  "about.room3Desc":
+    "With a surface around 50m2, it is located on the 3rd and last floor. These loft-style rooms open onto a pretty living room with dining area and have floor-to-ceiling windows overlooking a terrace with jacuzzi overlooking the sea. They feature a king-size bed, a bathroom with a shower and a hairdryer. Italian and hot water. A lounge area, with dining area, sink, mini fridge, microwave, kettle. For your comfort it also has air conditioning, a flat-screen TV with Samui cable, an ironing set and a safe. This room with its \"honeymoon\" spirit can not accommodate any extra bed.",
   "about.room4Type": "Suite with kichenette",
-  "about.room4Desc": "Romm's description"
+  "about.room4Title": "A small and practical apartment on the first floor",
+  "about.room4Desc":
+    "With a surface around 43 m2, they are located on the 1st floor, have a nice balcony with view on the trees right in front of the beach of Maenam, we do not see the sea of ​​these rooms but according to the wind we can hear the surf waves. They have a king size bed, their own bathroom with walk-in shower and hot water. A kitchenette allowing for extra kitchen, with sink, refrigerator, microwave, kettle, coffee machine, and simple crockery for 3 people, as well as a table and chairs. For your comfort, it also has air conditioning, a flat screen TV with Samui cable and a safe. This room can accommodate 1 extra bed with surcharge."
 }

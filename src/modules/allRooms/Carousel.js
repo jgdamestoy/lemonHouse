@@ -11,7 +11,7 @@ import Slide from "./Slide";
 const Container = styled.div`
   width: 80vw;
   @media (min-width: ${breakPoints.std}) {
-    width: 40vw;
+    width: 50vw;
   }
 `;
 
