@@ -1,61 +1,40 @@
 {
-  "noMatch.title": "Page indisponible",
-  "noMatch.description":
-    "The address may contain typing errors. Our website may be experiencing difficulties",
-  "header.about": "A Propos",
-  "header.rooms": "Nos Chambres",
-  "header.around": "Autour",
-  "homeCover.rooms": "Voir les chambres",
-  "room.book": "Reserver",
-  "allRooms.title": "Nos chambres",
-  "allRooms.book": "Reserver",
-  "allRooms.seeRoomButton": "Voir les chambres",
-  "allRooms.description1":
-    "Toutes les chambres ont un accès gratuit à la piscine avec à votre disposition en libre-service des serviettes de plages.",
-  "allRooms.description2":
-    "Le wifi est gratuit et disponible dans tout l’hôtel.",
-  "allRooms.description3":
-    "Gel douche et savon à disposition dans chaque salle de bain, et 2 bouteilles d’eau par jour.",
-  "allRooms.description4":
-    "Sèche-cheveux à votre disposition sur demande au bar.",
-  "allRooms.description5":
-    "Certaines chambres peuvent accueillir un à deux lits d’appoint qui sont facturés 200 THB chacun par jour (or petit déjeuner) à régler directement à l’hôtel au moment du check-in.",
-  "allRooms.description6":
-    "Le petit déjeuner est au prix de 250 THB par personne et par jour il comprend : Boisson chaude à volonté, Un jus de fruits (orange, goyave ou ananas), Un petit pain français cuit du jour, Un mini pain au chocolat, Un mini croissant, Beurre, Confiture, 2 œufs, au plat, ou en omelette, Bacon, 1 assiette de fruits frais du jour.",
-  "about.title":
-    "Nouveaux proprietaires et nouvelle equipe depuis mi-mars 2018",
-  "about.block1":
-    "Nous sommes un couple de nouveaux managers français. Notre établissement est situé à proximité de Maenam Beach et de la Walking Street, où vous trouverez de nombreux bars et restaurants et où un marché coloré vous accueillera tous les jeudis soirs.",
-  "about.block2":
-    "Nous vous accueillons dans un cadre verdoyant et calme avec un fonctionnement de \"Guest House\", où l'ambiance sera conviviale et familiale. Bonne humeur, sourires et rires seront les mots d'ordre. Nous ferons tout pour rendre votre séjour agréable et que vous en gardiez les meilleurs souvenirs. Vous pourrez passer ici en quelques minutes du tumulte de la \"Main Road\" au silence d'un petit jardin tropical.",
-  "about.block3":
-    "La réception est ouverte de 08h00 à 18h30, l'enregistrement à partir de 14h00 et le départ jusqu`à 11h00.  Dites-nous votre heure approximative d'arrivée afin que nous puissions faire tout pour vous accueillir le mieux possible.",
-  "about.block4":
-    "Six de nos chambres ont des balcons privés et toutes sont équipées de climatisation, télévision par câble et mini-bar. Certaines possèdent également une kitchenette avec des tables à manger et / ou des baignoires spa extérieures. Une connexion Wi-Fi est disponible dans tout l'établissement.",
-  "about.block5":
-    "Nous vous servirons des petits déjeuners copieux dans le salon ou même au bar si vous le souhaitez, de 08h30 à 10h00. Pour un horaire plus matinal, demandez-nous 24 heures à l'avance et nous essaierons de l'organiser pour vous. Si vous n'avez pas opté pour le petit déjeuner, vous pourrez toujours en profiter en le commandant la veille avant 17h00, au prix de 250 THB par personne.",
-  "about.block6":
-    "Nos amis les animaux sont les bienvenus gratuitement. Jasmine, notre adorable chienne Setter anglais, se fera un plaisir de leur tenir compagnie si vous le souhaitez.",
-  "about.block7":
-    "Enfin, nous pouvons organiser pour vous la location de voitures et scooters, ainsi que vos transferts.",
-  "aboutFooter.title":
-    "Nous parlons français et anglais et serons heureux de vous rencontrer. Stephanie et Jean.",
-  "aboutFooter.book": "Reserver",
-  "about.room1Type": "chambre double supérieure",
-  "about.room1Title": "Une chambre avec salon au deuxième étage.",
-  "about.room1Desc":
-    "D’une surface aux alentours de 47m2, elles se situent au 2ème étage, disposent d’un joli balcon avec vue mer. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude. D’un espace salon, avec coin repas, évier, mini frigo, micro-onde, bouilloire Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui, ainsi que d’un coffre-fort. Cette chambre peut accueillir au maximum 2 lits d’appoint",
-  "about.room2Type": "chambre standart twin",
-  "about.room2Title": "Une chambre simple et calme, en rez-de-jardin.",
-  "about.room2Desc":
-    "D’une surface aux environs de 23m2, elle se situe en rez de jardin et de piscine. D’un confort simple mais agréable elle est pourvue de 2 lits simples, dispose de sa propre salle de bain avec douche à l’italienne et eau chaude. Elle dispose pour votre confort d’une climatisation, d’un mini frigo, d’une télévision écran plat avec câble Samui, d’une bouilloire ainsi que d’un coffre-fort. De par sa petite surface cette chambre ne peut pas accepter de lit d’appoint ",
-  "about.room3Type": "Loft rooftop avec jacuzzi",
-  "about.room3Title": "Une grande chambre esprit loft au troisième étage.",
-  "about.room3Desc":
-    "D’une surface aux alentours de 50m2, elle se situent au 3éme et dernier étage. Ces chambres ont un esprit loft, ouvertes sur un joli salon avec coin repas et disposent de grandes baies vitrées donnant sur une terrasse avec jacuzzi surplombant la mer. Elles sont pourvues d’un lit king size, d’une salle de bain avec douche à l’italienne et eau chaude. D’un espace salon, avec coin repas, évier, mini frigo, micro-onde, bouilloire. Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui, d’un nécessaire de repassage ainsi que d’un coffre-fort. Cette chambre par son esprit « lune de miel » ne peut accueillir de lit d’appoint.",
-  "about.room4Type": "suite avec kitchenette",
-  "about.room4Title":
-    "Un petit appartement pratique et convivial au premier étage",
-  "about.room4Desc":
-    "D’une surface aux alentours de 43 m2, elles se situent au 1er étage, disposent d’un joli balcon avec vue sur les arbres juste devant la plage de Maenam, nous ne voyons pas la mer de ces chambres mais en fonction du vent nous pouvons entendre le ressac des vagues. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude. D’une kitchenette permettant de la cuisine d’appoint, avec évier, réfrigérateur, micro-onde, bouilloire, machine à café, et de vaisselle simple pour 3 personnes, ainsi qu’une table et des chaises. Pour votre confort elle dispose en outre d’une climatisation, d’une télévision écran plat avec câble Samui ainsi que d’un coffre-fort. Cette chambre peut accueillir 1 lit d’appoint avec supplément."
+  "noMatch.title" : "Page indisponible",
+  "noMatch.description" : "The address may contain typing errors. Our website may be experiencing difficulties",
+  "header.about" : "A Propos",
+  "header.rooms" : "Nos Chambres",
+  "header.around" : "Autour",
+  "homeCover.rooms" : "Voir les chambres",
+  "room.book" : "Reserver",
+  "allRooms.title" : "Nos chambres",
+  "allRooms.book" : "Reserver",
+  "allRooms.seeRoomButton" : "Voir les chambres",
+  "allRooms.description1" : "Toutes les chambres ont un accès gratuit à la piscine avec à votre disposition en libre-service des serviettes de plage.",
+  "allRooms.description2" : "Le wifi est gratuit et disponible dans tout l’hôtel.",
+  "allRooms.description3" : "Du gel douche et du savon sont à disposition dans chaque salle de bain. Deux bouteilles d’eau par jour sont disponibles dans chaque chambre.",
+  "allRooms.description4" : "Des sèche-cheveux sont disponibles sur demande à la réception.",
+  "allRooms.description5" : "Certaines chambres peuvent accueillir un à deux lits d’appoint qui seront facturés 200 THB chacun par jour (hors petit déjeuner), à régler directement à l’hôtel au moment du check-in. Les lits de bébé sont fournis gratuitement.",
+  "allRooms.description6" : "Le petit déjeuner est au prix de 250 THB par personne et par jour. Il comprend une boisson chaude à volonté (café, thé ou chocolat), un jus de fruits (orange, goyave ou ananas), un petit pain français, un mini pain au chocolat et un mini croissant, tous cuits du jour, du beurre, de la confiture, deux œufs au plat ou en omelette, du bacon et une assiette de fruits frais du jour.",
+  "about.title" : "Nouveaux proprietaires et nouvelle equipe depuis mi-mars 2018",
+  "about.block1" : "Nous sommes un couple de nouveaux managers français. Notre établissement est situé à proximité de Maenam Beach et de la Walking Street, où vous trouverez de nombreux bars et restaurants et où un marché coloré vous accueillera tous les jeudis soirs.",
+  "about.block2" : "Nous vous accueillons dans un cadre verdoyant et calme avec un fonctionnement de \"Guest House\", où l'ambiance sera conviviale et familiale. Bonne humeur, sourires et rires seront les mots d'ordre. Nous ferons tout pour rendre votre séjour agréable et que vous en gardiez les meilleurs souvenirs. Vous pourrez passer ici en quelques minutes du tumulte de la \"Main Road\" au silence d'un petit jardin tropical.",
+  "about.block3" : "La réception est ouverte de 08h00 à 18h30, l'enregistrement à partir de 14h00 et le départ jusqu`à 11h00.  Dites-nous votre heure approximative d'arrivée afin que nous puissions faire tout pour vous accueillir le mieux possible.",
+  "about.block4" : "Six de nos chambres ont des balcons privés et toutes sont équipées de climatisation, télévision par câble et mini-bar. Certaines possèdent également une kitchenette avec des tables à manger et / ou des baignoires spa extérieures. Une connexion Wi-Fi est disponible dans tout l'établissement.",
+  "about.block5" : "Nous vous servirons des petits déjeuners copieux dans le salon ou même au bar si vous le souhaitez, de 08h30 à 10h00. Pour un horaire plus matinal, demandez-nous 24 heures à l'avance et nous essaierons de l'organiser pour vous. Si vous n'avez pas opté pour le petit déjeuner, vous pourrez toujours en profiter en le commandant la veille avant 17h00, au prix de 250 THB par personne.",
+  "about.block6" : "Nos amis les animaux sont les bienvenus gratuitement. Jasmine, notre adorable chienne Setter anglais, se fera un plaisir de leur tenir compagnie si vous le souhaitez.",
+  "about.block7" : "Enfin, nous pouvons organiser pour vous la location de voitures et scooters, ainsi que vos transferts.",
+  "aboutFooter.title" : "Nous parlons français et anglais et serons heureux de vous rencontrer. Stephanie et Jean.",
+  "aboutFooter.book" : "Reserver",
+  "about.room1Type" : "chambre double supérieure",
+  "about.room1Title" : "Deux chambres avec salon au deuxième étage, à partir de 1000 THB hors petit-déjeuner, suivant la saison.",
+  "about.room1Desc" : "D’une surface aux alentours de 47m2, elles se situent au deuxième étage, disposent d’un joli balcon avec vue mer. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude, d’un espace salon avec coin repas, évier, mini frigo, micro-ondes et bouilloire. Pour votre confort, elles disposent en outre d’une climatisation, d’une télévision écran plat avec « Samui Cable » ainsi que d’un coffre-fort. Ces chambres peuvent accueillir au maximum 2 lits d’appoint.",
+  "about.room2Type" : "chambre standart twin",
+  "about.room2Title" : "Une chambre simple et calme, en rez-de-jardin, à partir de 700 THB hors petit-déjeuner, suivant la saison.",
+  "about.room2Desc" : "D’une surface aux environs de 23m2, elle se situe en rez de jardin et de piscine. D’un confort simple mais agréable elle est pourvue de 2 lits simples, dispose de sa propre salle de bain avec douche à l’italienne et eau chaude. Elle dispose pour votre confort d’une climatisation, d’un mini frigo, d’une télévision écran plat avec « Samui Cable », d’une bouilloire ainsi que d’un coffre-fort. De par sa petite surface, cette chambre ne peut pas recevoir de lit d’appoint ",
+  "about.room3Type" : "Loft rooftop avec jacuzzi",
+  "about.room3Title" : "Deux grandes chambres esprit loft au troisième étage, à partir de 2000 THB hors petit-déjeuner, suivant la saison.",
+  "about.room3Desc" : "D’une surface aux alentours de 50m2, elles se situent au troisième et dernier étage. Ces chambres ont un esprit loft, ouvertes sur un joli salon avec coin repas et disposent de grandes baies vitrées donnant sur une terrasse avec jacuzzi surplombant la mer. Elles sont pourvues d’un lit king size, d’une salle de bain avec douche à l’italienne et eau chaude, d’un espace salon avec coin repas, évier, mini frigo, micro-ondes et bouilloire. Pour votre confort elles disposent en outre d’une climatisation, d’une télévision écran plat avec « Samui Cable », d’un nécessaire de repassage ainsi que d’un coffre-fort. Ces chambres, par leur esprit « lune de miel », ne peuvent accueillir de lit d’appoint.",
+  "about.room4Type" : "suite avec kitchenette.",
+  "about.room4Title" : "Deux petits appartements pratiques et conviviaux au premier étage, à partir de 1200 THB hors petit-déjeuner, suivant la saison.",
+  "about.room4Desc" : "D’une surface aux alentours de 43 m2, elles se situent au premier étage, disposent d’un joli balcon avec vue sur les arbres juste devant la plage de Maenam. Nous ne voyons pas la mer depuis ces chambres mais en fonction du vent, nous pouvons entendre le ressac des vagues. Elles sont pourvues d’un lit king size, de leur propre salle de bain avec douche à l’italienne et eau chaude, d’une kitchenette permettant de la cuisine d’appoint, avec évier, réfrigérateur, micro-ondes, bouilloire, machine à café, de vaisselle simple pour 3 personnes, ainsi qu’une table et des chaises. Pour votre confort elles disposent en outre d’une climatisation, d’une télévision écran plat avec « Samui Cable » ainsi que d’un coffre-fort. Ces chambres peuvent accueillir 1 lit d’appoint avec supplément."
 }
