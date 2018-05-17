@@ -112,7 +112,7 @@ export const data = [
     ],
     slug: `rooftop`,
     type: messages.room3Type,
-    title: messages.room1Title,
+    title: messages.room3Title,
     description: messages.room3Desc,
     number: 2
   }

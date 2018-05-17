@@ -36,10 +36,12 @@ const Title = styled.div`
   color: ${colors.lemonGreen};
   font-size: ${fontSize.std.mobile};
   padding-right: 10vw;
+  display: none;
   @media (min-width: ${breakPoints.std}) {
     font-size: ${fontSize.std.std};
     padding-bottom: 5vh;
     padding-right: 0vw;
+    display: block;
   }
 `;
 
