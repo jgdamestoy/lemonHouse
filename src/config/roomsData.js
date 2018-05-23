@@ -57,9 +57,9 @@ export const data = [
   {
     id: `2`,
     imgs: [
-      `${CONFIG.CDN}/img/rooms/2/1.jpg`,
-      `${CONFIG.CDN}/img/rooms/2/2.jpg`,
-      `${CONFIG.CDN}/img/rooms/2/3.jpg`
+      `${CONFIG.CDN}/img/rooms/2/r2_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/2/r2_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/2/r2_03.jpg`
     ],
     slug: `twin`,
     type: messages.room2Type,
@@ -70,13 +70,19 @@ export const data = [
   {
     id: `4`,
     imgs: [
-      `${CONFIG.CDN}/img/rooms/4/1.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/2.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/3.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/4.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/5.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/6.jpg`,
-      `${CONFIG.CDN}/img/rooms/4/7.jpg`
+      `${CONFIG.CDN}/img/rooms/4/r4_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r4_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r4_03.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r4_04.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r4_05.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r4_06.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_03.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_04.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_05.jpg`,
+      `${CONFIG.CDN}/img/rooms/4/r5_06.jpg`
+
     ],
     slug: `suite`,
     type: messages.room4Type,
@@ -87,14 +93,20 @@ export const data = [
   {
     id: `1`,
     imgs: [
-      `${CONFIG.CDN}/img/rooms/1/1.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/2.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/3.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/4.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/5.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/6.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/7.jpg`,
-      `${CONFIG.CDN}/img/rooms/1/8.jpg`
+      `${CONFIG.CDN}/img/rooms/1/r6_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r6_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r6_03.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r6_04.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r6_05.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r6_06.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_03.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_04.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_05.jpg`,
+      `${CONFIG.CDN}/img/rooms/1/r7_06.jpg`
+
+
     ],
     slug: `superior`,
     type: messages.room1Type,
@@ -105,10 +117,13 @@ export const data = [
   {
     id: `3`,
     imgs: [
-      `${CONFIG.CDN}/img/rooms/3/1.jpg`,
-      `${CONFIG.CDN}/img/rooms/3/2.jpg`,
-      `${CONFIG.CDN}/img/rooms/3/3.jpg`,
-      `${CONFIG.CDN}/img/rooms/3/4.jpg`
+      `${CONFIG.CDN}/img/rooms/3/r8_01.jpg`,
+      `${CONFIG.CDN}/img/rooms/3/r8_02.jpg`,
+      `${CONFIG.CDN}/img/rooms/3/r8_03.jpg`,
+      `${CONFIG.CDN}/img/rooms/3/r8_04.jpg`,
+      `${CONFIG.CDN}/img/rooms/3/r8_05.jpg`,
+      `${CONFIG.CDN}/img/rooms/3/r8_06.jpg`
+
     ],
     slug: `rooftop`,
     type: messages.room3Type,
