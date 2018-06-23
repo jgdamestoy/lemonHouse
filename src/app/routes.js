@@ -14,7 +14,10 @@ import Home from "modules/home/";
 import About from "modules/about/";
 import AllRooms from "modules/allRooms/";
 import Room from "modules/room/";
+import Booking from "modules/booking/";
+
 import NoMatch from "./noMatch";
+import Wip from "./wip";
 
 const propTypes = {};
 
@@ -28,6 +31,8 @@ class Routes extends Component {
         <Route path={`/${country}/about`} component={About} />
         <Route path={`/${country}/allrooms`} component={AllRooms} />
         <Route path={`/${country}/room/:slug/:imgIndex?`} component={Room} />
+        <Route path={`/${country}/around`} component={Wip} />
+        <Route path={`/${country}/booking`} component={Booking} />
 
         <Route render={props => <NoMatch country={country} {...props} />} />
       </Switch>

@@ -32,6 +32,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-react-intl": "^2.4.0",
+    "eslint-plugin-react": "^7.9.1",
     "prettier": "1.12.1"
   }
 }

@@ -25,6 +25,7 @@ export const config = {
   GOOGLE_MAP_LNG: 99.99607370000001,
   GOOGLE_CLIENT_ID: null,
   BOOKING_ADRESS: "https://goo.gl/uCzDq5",
+  BOOKING_EMAIL_ADRESS: "booking@lemonhousesamui.com",
   CDN: "",
   ALT_IMG: "/img/dog.jpg",
   FACEBBOK_URL: "https://www.facebook.com/Lemon-House-Samui-1077290535614338/",
