@@ -54,5 +54,25 @@
   "about.room4Type": "Suite with kichenette",
   "about.room4Title": "A small and practical apartment on the first floor",
   "about.room4Desc":
-    "With a surface around 43 m2, they are located on the 1st floor, have a nice balcony with view on the trees right in front of the beach of Maenam, we do not see the sea of ​​these rooms but according to the wind we can hear the surf waves. They have a king size bed, their own bathroom with walk-in shower and hot water. A kitchenette allowing for extra kitchen, with sink, refrigerator, microwave, kettle, coffee machine, and simple crockery for 3 people, as well as a table and chairs. For your comfort, it also has air conditioning, a flat screen TV with Samui cable and a safe. This room can accommodate 1 extra bed with surcharge."
+    "With a surface around 43 m2, they are located on the 1st floor, have a nice balcony with view on the trees right in front of the beach of Maenam, we do not see the sea of ​​these rooms but according to the wind we can hear the surf waves. They have a king size bed, their own bathroom with walk-in shower and hot water. A kitchenette allowing for extra kitchen, with sink, refrigerator, microwave, kettle, coffee machine, and simple crockery for 3 people, as well as a table and chairs. For your comfort, it also has air conditioning, a flat screen TV with Samui cable and a safe. This room can accommodate 1 extra bed with surcharge.",
+  "wip.title": "Under construction",
+  "wip.description": "We are currently working on sites on Koh Samui that will enhance your stay on our island (restaurants, bars, shops, tours, shows ...)",
+  "booking.bookingEmail" : "Book by email",
+"booking.bookingWebsite" : "Book through booking.com",
+"booking.clientName" : "Client name",
+"booking.phoneNumber" : "Phone number",
+"booking.email" : "Contact email (if different from this one)",
+"booking.room" : "Rooms type wished (number)",
+"booking.standart" : " - Standart room twin",
+"booking.suite" : " - Suite with kichenette",
+"booking.sup" : " - Superior double bed room",
+"booking.rooftop" : " - Loft rooftop with jacuzzi",
+"booking.arrivalDate" : "Arrival date",
+"booking.arrivalHour" : "Arrival hour",
+"booking.departureDate" : "Departure date",
+"booking.breakfast" : "With breakfast:    YES - NO",
+"booking.motobike" : "Motobike rent:     YES - NO",
+"booking.car" : "Car rent:              YES - NO",
+"booking.comment" : "Comment, special whishes",
+"booking.subject" : "Booking request"
 }
