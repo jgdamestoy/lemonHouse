@@ -65,19 +65,19 @@ class Booking extends Component {
       },
       standart: {
         id: "booking.standart",
-        defaultMessage: "Standart room twin"
+        defaultMessage: " - Standart room twin"
       },
       suite: {
         id: "booking.suite",
-        defaultMessage: "Suite with kichenette"
+        defaultMessage: " - Suite with kichenette"
       },
       sup: {
         id: "booking.sup",
-        defaultMessage: "Superior double bed room"
+        defaultMessage: " - Superior double bed room"
       },
       rooftop: {
         id: "booking.rooftop",
-        defaultMessage: "Loft rooftop with jacuzzi"
+        defaultMessage: " - Loft rooftop with jacuzzi"
       },
       arrivalDate: {
         id: "booking.arrivalDate",
@@ -89,7 +89,7 @@ class Booking extends Component {
       },
       departureDate: {
         id: "booking.departureDate",
-        defaultMessage: "Arrival hour"
+        defaultMessage: "Departure date"
       },
       breakfast: {
         id: "booking.breakfast",
@@ -116,8 +116,7 @@ class Booking extends Component {
     const sendMail = () => {
         var body = intl.formatMessage(messages.clientName) + ":\n"
          + intl.formatMessage(messages.phoneNumber) + ":\n"
-         + intl.formatMessage(messages.email) + ":\n"
-         + intl.formatMessage(messages.room) + ":\n\n"
+         + intl.formatMessage(messages.email) + ":\n\n"
          + intl.formatMessage(messages.room) + ":\n\n"
          + intl.formatMessage(messages.standart) + ":\n"
          + intl.formatMessage(messages.suite) + ":\n"
