@@ -35,9 +35,6 @@ class Footer extends Component {
           <SocialButton target="_blank" href={CONFIG.FACEBBOK_URL}>
             <Logo src={`${CONFIG.CDN}/img/facebook.jpg`} />
           </SocialButton>
-          <SocialButton target="_blank" href={CONFIG.TWITTER_URL}>
-            <Logo src={`${CONFIG.CDN}/img/twitter.jpg`} />
-          </SocialButton>
         </LogoBox>
       </Container>
     );
